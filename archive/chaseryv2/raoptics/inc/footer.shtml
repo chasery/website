@@ -1,0 +1,9 @@
+		<footer>
+			<div id="footer">
+				<p class="left">2850 SW Cedar Hills Blvd., Suite 69 Beaverton, Oregon 97005</p>
+				<p class="right">Copyright &copy; <script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> Ra Optics LLC. All Rights Reserved</p>
+				<div class="clear"></div>
+				<p class="left"><a href="http://www.twitter.com/raoptics" target="_blank" title="Ski Goggles"><img src="images/templateImages/twitter.png" height="25" width="25" alt="Ski Goggles"/></a> <a href="http://www.facebook.com/profile.php?id=100000513720508&ref=search&sid=616640205.3478643842..1" target="_blank" title="Ski Goggles"><img src="images/templateImages/facebook.png" height="25" width="25" alt="Ski Goggles"/></a></p>
+				<p class="right"><strong>Site Built by MotoGFX:</strong> <a href="http://www.motogfx.com" title="Website Design Portland OR" target="_blank">Website and Print Design<span> Portland, <abbr title="Oregon">OR</abbr></span></a></p>
+			</div>
+		</footer>

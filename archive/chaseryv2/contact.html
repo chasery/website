@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Chasery.com | contact</title>
+<!--#include virtual="includes/meta.html" -->
+    <link rel="shortcut icon" href="images/favicon.gif" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<script src="jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.form.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$('#contactForm').ajaxForm({
+				target: '#error',
+				success: function() {
+				$('#error').fadeIn('slow');
+				}
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<!--Left Column-->
+		<div id="leftColumn">
+			<div id="chaseryLogo">
+				<h1><span>A portfolio dedicated to the work of Ryan Chase, a Portland based Web Developer</span></h1>
+			</div>
+			<div id="infoWrapper">
+				<div id="infoContact">
+					<a href="#contact"><img style="display: block;" src="images/avatars/contactAvatar.jpg" width="170px" height="119px" alt="Get in contact with Ryan for your design inquiries"/></a>
+					<a id="avatar" href="#contact">Contact <span>Ryan!</span></a>
+					<dl class="infoList">
+						<dt>eMail</dt>
+						<dd><address><a href="mailto:ryan@chasery.com">ryan@chasery.com</a></address></dd>
+						<dt>Phone</dt>
+						<dd>503.593.0491</dd>
+					</dl>
+				</div>
+				<div id="infoFooter"></div>
+			</div>
+		</div>
+		<!--End of Left Column-->
+		<!--Right Column-->
+		<div id="rightColumn">
+<!--#include virtual="includes/nav.html" -->
+			<div class="clear"></div>
+			<div id="contactContent">
+				<div id="contactHeader">
+					<h2><span>Contact Ryan for your Web and Design solutions</span></h2>
+				</div>	
+				<a name="contact"></a>
+				<form id="contactForm" action="submitEmail.php" method="post">
+					<table>
+						<tr>
+							<td class="contactLabel"><label for="formName"><span>*</span> name</label></td>
+							<td><input style="overflow-y: visible;" type="text" id="formName" name="formName" size="25"/></td>
+						</tr>
+						<tr>
+							<td class="contactLabel"><label for="formEmail"><span>*</span> eMail</label></td>
+							<td><input style="overflow-y: visible;" type="text" id="formEmail" name="formEmail" size="25"/></td>
+						</tr>
+						<tr>
+							<td class="contactLabel"><label for="formComment"><span>*</span> comment</label></td>
+							<td><textarea style="overflow: auto;" id="formComment" name="formComment" cols="40" rows="7"></textarea></td>
+							<td>
+								<div id="error">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input style="background: none; border: none; padding: 0;" type="image" alt="submit form" src="images/sendButton.gif"/></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+<!--#include virtual="includes/footer.html" -->
+		</div>
+		<!--End of Right Column-->
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+//
+// Template Main
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+body {
+	background-position: fixed;
+	background-size: cover;
+	
+	@media (max-width: @screen-xs-max) {
+		background-image: url('/assets/img/chasery-bg-xs.png');
+	}
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		background-image: url('/assets/img/chasery-bg-sm.png');
+	}
+	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+		background-image: url('/assets/img/chasery-bg-md.png');
+	}
+	@media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
+		background-image: url('/assets/img/chasery-bg-lg.png');
+	}
+}

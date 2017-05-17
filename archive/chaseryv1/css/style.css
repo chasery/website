@@ -1,0 +1,432 @@
+/* CSS Document */
+
+/* General Styles */
+
+body {
+	background-image: url(../images/site_bg.png);
+	background-color: #191e20;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* Site Wrapper */
+
+#wrapper {
+	background-image: url(../images/wrapper_bg.png);
+	background-repeat: repeat-y;
+	display: inline;
+	float: left;
+	margin: 0 0 100px 200px;
+	width: 613px;
+}
+
+
+/* Site Header */
+
+#header {
+	background-image: url(../images/header_bg.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 95px;
+	width: 613px;
+}
+
+
+/* Header Navagation */
+
+#headernav {
+	background-image: url(../images/header_nav.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 55px;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	width: 613px;
+}
+
+#mainnav li {
+	list-style: none;
+    margin: 0; 
+	padding: 0; 
+    position: absolute; 
+	top: 0;
+}
+
+#mainnav li, #mainnav a {
+	display: block;
+    height: 55px; 
+}
+
+#menuhome {left: 368px; width: 48px;}
+#menuinfo {left: 416px; width: 77px;}
+#menuport {left: 493px; width: 60px;}
+#menucontact {left: 553px; width: 60px;}
+
+#menuhome a {left: 368px; width: 48px;}
+#menuinfo a {left: 416px; width: 77px;}
+#menuport a {left: 493px; width: 60px;}
+#menucontact a {left: 553px; width: 60px;}
+
+#menuhome a:hover {
+    background: transparent url(../images/header_nav.png)
+    -368px -55px no-repeat;}
+#menuinfo a:hover {
+    background: transparent url(../images/header_nav.png)
+    -416px -55px no-repeat;}
+#menuport a:hover {
+    background: transparent url(../images/header_nav.png)
+    -493px -55px no-repeat;}
+#menucontact a:hover {
+    background: transparent url(../images/header_nav.png)
+    -553px -55px no-repeat;}
+	
+#menuhome a.current {
+    background: transparent url(../images/header_nav.png)
+    -368px -55px no-repeat;}
+#menuinfo a.current {
+    background: transparent url(../images/header_nav.png)
+    -416px -55px no-repeat;}
+#menuport a.current {
+    background: transparent url(../images/header_nav.png)
+    -493px -55px no-repeat;}
+#menucontact a.current {
+    background: transparent url(../images/header_nav.png)
+    -553px -55px no-repeat;}
+
+
+/* Welcome Box */
+
+#welcome {
+	background-image: url(../images/welcome_bg.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 73px;
+	width: 613px;
+}
+
+#welcome h2 {
+	color: #c5c6c6;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 14px 0 0 40px;
+	padding: 0;
+}
+
+#welcome h1 {
+	color: #a89f62;
+	font-size: 11px;
+	line-height: 2px;
+	margin: 0 0 0 40px;
+	padding: 0;
+}
+
+
+/* Site Content */
+
+#content_header {
+	background-image: url(../images/body_header.png);
+	background-repeat: no-repeat;
+	float: left;
+	margin: 0 0 40px 0;
+	min-height: 432px;
+	width: 613px;
+}
+
+#content_header h2 {
+	color: #c5c6c6;
+	font-size: 14px;
+	margin: 40px 63px 10px 50px;
+	padding: 0;
+}
+
+#content_header h3 {
+	color: #a89f62;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 40px 0 10px 40px;
+	padding: 0;
+}
+
+#content_header p {
+	color: #ffffff;
+	font-size: 11px;
+	margin: 0 63px 10px 50px;
+	padding: 0;
+}
+
+#content_header a {
+	color: #c5c6c6;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#content_header a:hover {
+	color: #ffed8a;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+ /* News Images */
+
+.banner {
+	margin: 10px 0 0 50px;
+}
+
+.horizontal {
+	border: none;
+	margin: 10px 0 0 20px;
+}
+
+ /*Information Block for Info page */
+
+.question {
+	color: #ffffff;
+	display: inline;
+	float: left;
+	list-style: none;
+	margin: 0 0 10px 50px;
+	padding: 0;
+	position: relative;
+}
+
+.information {
+	color: #ffffff;
+	display: inline;
+	float: left;
+	list-style: none;
+	margin: 0 0 10px 55px;
+	padding: 0;
+	position: relative;
+}
+
+.portrait {
+	color: #ffffff;
+	display: inline;
+	float: right;
+	list-style: none;
+	margin: 0 63px 10px 0;
+	padding: 0;
+	position: relative;
+}
+
+.portrait img {
+	border: 1px solid #14181a;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+ /* Gallery for Portfolio page */
+
+.gallery {
+	list-style: none;
+	margin: 10px 0 0 50px;
+	padding: 0;
+}
+
+.gallery img {
+	background: #161b1d;
+	border: 1px solid #14181a;
+	padding: 2px;
+	vertical-align: top;
+	width: 100px;
+	height: 100px;
+}
+
+.gallery li {
+	background: #14181a;
+	border: 1px solid #161b1d;
+	display: inline;
+	float: left;
+	margin: 3px;
+	padding: 5px;
+	position: relative;
+}
+
+ /*Contact Form for Contact page */
+
+.contact {
+	color: #ffffff;
+	display: inline;
+	float: left;
+	list-style: none;
+	margin: 0 0 10px 50px;
+	padding: 0;
+	position: relative;
+}
+
+.contact li {
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+.contact_field {
+	color: #ffffff;
+	display: inline;
+	float: left;
+	list-style: none;
+	margin: 0 0 10px 55px;
+	padding: 0;
+	position: relative;
+}
+
+.contact_field li {
+	margin: 0 0 5px 0 ;
+	padding: 0;
+}
+
+.contact_field input {
+	background: #232a2e;
+	border: 1px solid #202729;
+	color: #ffffff;
+}
+
+.contact_field textarea {
+	background: #232a2e;
+	border: 1px solid #202729;
+	color: #ffffff;
+}
+
+
+.email {
+	background: #232a2e;
+	border: 1px solid #202729;
+	margin: 40px 0 0 50px;
+	padding: 20px 0 20px 0;
+	text-align: center;
+	width: 500px;
+}
+
+.email h4 {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+/* Content Footer */
+
+#content_footer {
+	background-image: url(../images/body_footer.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 10px;
+	width: 613px;
+}
+
+
+/* Site Footer */
+
+#footer {
+	background-image: url(../images/footer_bg.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 73px;
+	width: 613px;
+}
+
+#footer h2 {
+	color: #c5c6c6;
+	font-size: 14px;
+	margin: 20px 0 3px 442px;
+	padding: 0;
+}
+
+#footer a{
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0 0 14px 480px;
+	padding: 0;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #ffed8a;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+
+/* Footer Navagation */
+
+#footernav {
+	background-image: url(../images/footer_nav.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 28px;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	width: 613px;
+}
+
+#footnav li {
+	list-style: none;
+    margin: 0; 
+	padding: 0; 
+    position: absolute; 
+	top: 0;
+}
+
+#footnav li, #footnav a {
+	display: block;
+    height: 28px; 
+}
+
+#menutop {left: 576px; width: 37px;}
+
+#menutop a:hover {
+    background: transparent url(../images/footer_nav.png)
+    -576px -28px no-repeat;}
+
+
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+ 
+* html #wrapper {
+  margin-bottom: -3px;
+}
+
+* html #content_header {
+  height: 432px;
+}
+
+* html .question {
+  margin-left: 35px;
+}
+
+* html .information {
+  margin-left: 35px;
+}
+
+* html .contact {
+  margin-left: 35px;
+}
+
+* html .contact_field {
+  margin-left: 35px;
+}
+
+* html #content_footer {
+  margin-bottom: -3px;
+}
+ 
+/* End hide from IE5/mac */

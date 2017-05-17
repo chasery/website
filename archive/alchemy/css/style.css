@@ -1,0 +1,86 @@
+/* ############  CSS Document ############ */ 
+
+/* ############  General Styles ############ */ 
+.clear { clear: left; clear: right; clear:both } 
+.left { float: left; display: inline; }
+.right { float: right; display: inline; }
+
+/* ############  Page Elements ############ */ 
+body { background: #000; color: #fff; font: 11px Arial, sans-serif; padding:0; margin:0; }
+img, div { behavior: url("../iepngfix.htc") } /* ie6 PNG fix */
+h1, h2, h3 { padding:0; margin:0; color: #fff; }
+h1 span, h2 span, h3 span { display:none }
+h2 { font: bold 10px Arial, sans-serif; text-transform: uppercase; }
+h3 { font: bold 11px Arial, sans-serif; }
+div, form, img, address, dl, dt, dd, ul { padding: 0; margin: 0; }
+p { margin: 0 10px 15px 0; padding: 0; text-align:justify; }
+div, form, img { padding: 0; margin: 0; }
+hr { clear: left; clear: right; clear: both; }
+address { font-style:normal; margin:0; padding:0; }
+a { text-decoration: none; outline: none; }
+a:hover { text-decoration: underline; }
+a:visited { }
+a:active { outline: none;  }
+a img { border: none; }
+abbr { text-decoration: none; border-bottom: none;}
+strong { font-weight: normal;}
+dl { }
+dt { font-weight: bold;}
+
+
+/* ############  Template Styles ############ */ 
+#wrapper { margin:0 auto; width: 900px; padding-top: 15px; }
+#logo, #logo a { height: 89px; width: 433px; display: block; position: relative; padding:0; }
+#logo { float: left; background: url(../images/templateImages/dancewear-logo.gif) no-repeat top left; margin-bottom: 25px; }
+#logo address, #nav dd a span, .column p a span, .breadCrumbR a span, .breadCrumbL a span, td p a span, #productInfo p a span { display: none; }
+
+/* shopping cart */
+#cartInfo { float: right; margin-top: 15px; }
+#cartInfo p { font-size: 10px; color: #9fa1a4; text-align: right; margin: 0; margin-bottom: 3px; }
+#cartInfo form p input { float: left; border: 1px solid #656668; padding: 4px 0 3px 0; }
+#cartInfo form p a { float: left; display: block; }
+
+/* main navigation */
+#nav { float: left; text-align: right; width: 130px; margin-right: 20px; }
+#nav dt { margin-bottom: 5px; }
+#nav dd a { color: #9fa1a4; }
+#nav dd + dt {margin-top: 20px; }
+
+/* main content area */
+.column { float: left; margin: 0; width: 250px; margin-top: 25px; }
+.columnLeft, .columnRight { margin-top: 5px; border-top: 1px solid #383939; padding: 10px 15px 15px 15px; }
+.columnLeft { border-right: 1px solid #383939; }
+.column h2 { margin-left: 15px; }
+.column p { color: #fff; margin: 0; padding:0; }
+.column p + p { margin-top: 15px; }
+.column p a { color: #fff; font-style: italic; }
+
+/* footer */
+#footer { margin-top: 20px; }
+#footer p { text-align: right; color: #656668; margin-right: 0; }
+#footer p a { color: #656668; }
+
+
+/* ############  Page Styles ############ */
+
+#homeContent, #categoryContent, #productContent { float: left; width: 750px;}
+.breadCrumbR a, .breadCrumbL a, #productInfo h3 a { color: #a7a9ac; }
+
+/* home styles */
+#homeImages img { float: left; margin-left: 12px; }
+#homeImages div { float: left; position: relative; background: url(../images/pageImages/dancewear-1.jpg) no-repeat top left; width: 487px; height: 329px; }
+#homeImages div img { position: absolute; bottom: 15px; left: 0; margin: 0; }
+
+/* category styles */
+td { padding: 0 0 0 40px; }
+td p { text-align: right; margin: 0px; }
+td p a { color: #fff; }
+.breadCrumbR { text-align: right; margin: 10px 0 0 0; }
+.breadCrumbL { margin: 10px 0 0 0; }
+
+/* product styles */
+#productImage { float: left; display: block; margin-left: 40px; }
+#productInfo { float: left; margin-left: 40px; width: 230px; }
+#productInfo h2 + p { margin-top: 5px; padding-top: 10px; border-top: 1px solid #383939; }
+#productInfo h3 { margin-bottom: 5px; }
+#purchaseButton { display: block; background: url(../images/pageImages/dancewear-purchase.gif) no-repeat top left; width: 125px; height: 24px; padding: 5px 0 0 10px; color: #000; }

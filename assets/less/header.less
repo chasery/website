@@ -1,0 +1,219 @@
+//
+// Theme Header
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+header {
+	nav {
+		.transition(min-height .5s ease-in-out, background .5s ease-in-out;);
+		
+		&.navbar-fixed-top {
+			background: darken(@brand-secondary, 15%);
+			background-color: darken(rgba(127,140,141,0.15), 15%);
+			border-width: 0;
+			
+			@media (max-width: @screen-xs-max) {
+				background: darken(@brand-secondary, 15%);
+			}
+		}
+		&.scroll {
+			min-height: @navbar-height / 2;
+			background: #000;
+			background: darken(@brand-secondary, 15%);
+			
+			.navbar-toggle {
+				margin-top: @grid-gutter-width * 1.333;
+				
+				@media (max-width: @screen-xs-max) {
+					margin-top: @grid-gutter-width / 2;
+				}
+			}
+			.navbar-brand {
+				padding-top: @grid-gutter-width * 0.666;
+			
+				@media (max-width: @screen-xs-max) {
+					padding-top: @grid-gutter-width * 0.666;
+				}
+				
+				> a {
+					width: 304px / 2;
+					height: 75px / 2;
+						
+					@media (max-width: @screen-xs-max) {
+						width: 183px / 2;
+						height: 45px / 2;
+					}
+				}
+			}
+			.navbar-nav {
+				> li {
+					> a {
+						@media (min-width: @screen-sm-min) {
+							padding-top: @navbar-padding-vertical / 2;
+							padding-bottom: @navbar-padding-vertical / 2;
+						}
+					}
+				}
+			}
+		}
+		
+		> div {
+			.container;
+			
+			> div {
+				.make-row();
+				.clearfix;
+			}
+		}
+		
+		.navbar-header {
+			.make-xs-column(12);
+			.make-sm-column(4);
+			.transition(height .5s ease-in-out;);
+		}
+		.navbar-toggle {
+			.transition(border 1s ease-in-out, margin 1s ease-in-out;);
+			
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-top: @grid-gutter-width * 1.333;
+			
+			&:hover, &:focus, &:active {
+				.transition(border .15s ease-in-out);
+				
+				border-color: @brand-primary;
+				
+				.icon-bar {
+					.transition(background .15s ease-in-out);
+					
+					background-color: @brand-primary;
+				}
+			}
+			&:not(.collapsed) {
+				border-color: @brand-primary;
+				
+				.icon-bar {
+					background-color: @brand-primary;
+				}
+			}
+			
+			.icon-bar {
+				.transition(background 1s ease-in-out);
+			}
+		}// .navbar-toggle
+		.navbar-brand {
+			.transition(padding .5s ease-in-out);
+			height: auto;
+			padding: @grid-gutter-width 0 0 0;
+			
+			@media (max-width: @screen-xs-max) {
+				padding: @grid-gutter-width * 1.333 0 0 0;
+			}
+			
+			> a {
+				.transition(width .5s ease-in-out, height .5s ease-in-out;);
+				
+				display: block;
+				width: 304px;
+				height: 75px;
+					
+				@media (max-width: @screen-xs-max) {
+					width: 183px;
+					height: 45px;
+				}
+				
+				&:hover, &:focus {
+					> svg {
+						#CHASE {
+							path {
+								.transition(fill .15s ease-in-out);
+								
+								fill: @brand-primary;
+							}
+						}
+						#RY {
+							path {
+								.transition(fill .15s ease-in-out);
+								
+								fill: #fff;
+							}
+						}
+					}
+				}
+				> svg {
+					path {
+						.transition(fill 1s ease-in-out);
+					}
+				}
+			}
+		}// .navbar-brand
+		#navbar {
+			.make-sm-column(8);
+			.box-shadow(none);
+			
+			font-weight: 500;
+			text-transform: uppercase;
+			border-width: 0;
+
+			@media (min-width: @screen-md-min) {
+				font-size: @font-size-large;
+			}
+			
+			.navbar-right {
+				@media (max-width: @screen-xs-max) {
+					margin-top: @grid-gutter-width / 2;
+					margin-bottom: @grid-gutter-width / 2;
+				}
+				@media (min-width: @screen-sm-min) {
+					margin-right: 0;
+				}
+			}
+			
+			a {
+				.transition(color 1s ease-in-out, border 1s ease-in-out, font .5s ease-in-out, padding .5s ease-in-out;);
+				
+				border-bottom: 8px solid transparent;
+				
+				@media (max-width: @screen-xs-max) {
+					padding-left: @grid-gutter-width / 2;
+					padding-right: @grid-gutter-width / 2;
+					border-bottom-width: 0;
+					border-right: 8px solid transparent;
+				}
+				
+				&:hover, &:focus {
+					.transition(color .15s ease-in-out, border .15s ease-in-out;);
+					
+					border-color: @brand-primary;
+				}
+			}
+			li {
+				@media (max-width: @screen-xs-max) {
+					margin-top: 1px;
+					
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+				@media (min-width: @screen-sm-min) {
+					margin-left: 1px;
+				}
+				
+				&.active {
+					a {
+						border-bottom: 8px solid @brand-primary;
+						
+						@media (max-width: @screen-xs-max) {
+							border-bottom-width: 0;
+							border-right: 8px solid @brand-primary;
+						}
+					}
+				}
+			}
+		}// #navbar
+	}// nav
+}// header

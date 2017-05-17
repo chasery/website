@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<!--#include virtual="inc/meta.shtml"-->
+<link rel="shortcut icon" href="/images/templateImages/fav.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+<!-- Copy and paste this script tags below into your contact page-->
+<script src="scripts/contact_validation.js"></script>
+	<script>
+	required.add('Full_Name','NOT_EMPTY','Full Name');
+	required.add('Email_Address','EMAIL','Email Address');
+	required.add('Your_Message','NOT_EMPTY','Your Message')
+	</script>
+	
+	
+</head>
+
+<body>
+
+<!-- Copy and paste everything inside the form tags into your contact page and style as needed.  If more fields are needed, modify "scripts/contact_process.php" and add as necisary.  You'll also need to update "scripts/contact_settings.php" to modify the email subject line and email address this needs to be mailed to.-->
+<form name="contactformlite" method="post" action="scripts/contact_process.php" onSubmit="return validate.check(this)">
+<!--#include virtual="inc/header.shtml"-->
+				<div>
+					<h4><span>Contact "this company"</span></h4> 
+					<p>Thank you for visiting our website. Please fill out the following form to request information about our products and services or to provide feedback about our site. When you are finished, click the 'Submit' button to send us your message.</p>
+					<fieldset>
+						<legend>Contact "this company"</legend>
+						<table>
+							<tr>
+								<td><label for="Full_Name">Name:</label></td>
+								<td><input type="text" name="Full_Name" id="Full_Name" maxlength="80" style="width:250px"></td>
+							</tr>
+							<tr>
+								<td><label for="Full_Name">Email Address:</label></td>
+								<td><input type="text" name="Email_Address" id="Email_Address" maxlength="100" style="width:250px"></td>
+							</tr>
+							<tr>
+								<td><label for="Full_Name">Phone:</label></td>
+								<td><input type="text" name="Telephone_Number" id="Telephone_Number" maxlength="100" style="width:250px"></td>
+							</tr>
+							<tr>
+								<td><label for="Full_Name">Message:</label></td>
+								<td><textarea style="width:250px;height:120px" name="Your_Message" id="Your_Message" maxlength="2000"></textarea></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><button type="submit" value="Submit">Submit</button></td>
+							</tr>					
+						</table>
+					</fieldset>
+				</div>
+<!--#include virtual="inc/footer.shtml"-->
+</form>
+</body>
+</html>

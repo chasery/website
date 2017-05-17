@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Chasery.com | work</title>
+<!--#include virtual="includes/meta.html" -->
+    <link rel="shortcut icon" href="images/favicon.gif" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="jquery.lightbox-0.5.css" media="screen" />
+	<script src="jquery-1.2.6.min.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="jquery.lightbox-0.5.js" type="text/javascript" charset="utf-8" ></script>
+    <script type="text/javascript">
+	
+		$(function() {
+			$('a[@rel*=workExample]').lightBox();
+		});
+		
+    </script>
+</head>
+<body>
+	<div id="wrapper">
+		<!--Left Column-->
+		<div id="leftColumn">
+			<div id="chaseryLogo">
+				<h1><span>A portfolio dedicated to the work of Ryan Chase, a Portland based Web Developer</span></h1>
+			</div>
+			<div id="infoWrapper">
+				<div id="infoWork">
+					<a href="#featured"><img style="display: block;" src="images/avatars/workAvatar.jpg" width="170px" height="119px" alt="Featured Web Development work for Ryan Chase"/></a>
+					<a id="avatar" href="#featured">Featured <span>Work!</span></a>
+					<dl class="infoList">
+						<dt>Employment Status</dt>
+						<dd>Black Sierra</dd>
+						<dd><a href="http://www.blacksierra.net">www.blacksierra.net</a></dd>
+						<dd></dd>
+						<dd>Vhektor Interactive</dd>
+						<dd><a href="http://www.vhektor.com">www.vhektor.com</a></dd>
+						<dt>Last Employer</dt>
+						<dd>Big B Creations</dd>
+						<dd>Portland, Oregon</dd>
+						<dd><a href="http://www.bigbcreations.com">www.bigbcreations.com</a></dd>
+					</dl>
+				</div>
+				<div id="infoFooter"></div>
+			</div>
+		</div>
+		<!--End of Left Column-->
+		<!--Right Column-->
+		<div id="rightColumn">
+			<a name="top"></a>
+<!--#include virtual="includes/nav.html" -->
+			<div class="clear"></div>
+			<div id="workContent">
+				<div id="workHeader">
+					<h2><span>View the work of the Portland based Web Designer</span></h2>
+				</div>
+<!--#include virtual="includes/workContent.html" -->
+			</div>
+<!--#include virtual="includes/footer.html" -->
+		</div>
+		<!--End of Right Column-->
+	</div>
+</body>
+</html>

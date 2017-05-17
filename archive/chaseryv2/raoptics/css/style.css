@@ -1,0 +1,93 @@
+/* ############  CSS Document ############ */
+
+/* ############  General Styles ############ */
+.clear { clear: left; clear: right; clear:both } 
+.left { float: left; display: inline; }
+.right { float: right; display: inline; }
+
+/* ############  Page Elements ############ */
+body { font: 12px verdana, arial, sans-serif; color: #626262; background: #070709 url(../images/templateImages/ra-optics-bg.gif) repeat-x top left; border-top: 5px solid #00a0ba; padding:0; margin:0; }
+h1, h2 { padding:0; margin:0; }
+h1 span, h2 span, h3 span, h4 span { display:none }
+h2 { font: 36px verdana, arial, sans-serif; color:#e9e9e9; margin-bottom: 25px; }
+h3 { font: 16px verdana, arial, sans-serif; color:#e9e9e9; margin-bottom: 10px; }
+h4 { font-size: 12px; }
+div, form, img, address, dl, dt, dd, ul, li { padding: 0; margin: 0; }
+p { margin:0; padding: 0 0 15px 0; line-height: 18px; text-align:justify; }
+hr { clear: left; clear: right; clear: both; }
+address { font-style:normal; margin:0; padding:0; }
+a { text-decoration: none; outline: none;  }
+a:hover { text-decoration: underline; }
+a:visited { }
+a:active { outline: none;  }
+a img { border: none; }
+abbr { text-decoration: none; border-bottom: none;}
+strong { font-weight: normal;}
+dl { padding: 0.5em 0;}
+dt { font-weight: bold;}
+
+
+/* ############  Template Styles ############ */
+#wrapper { margin: 0 auto; width: 996px; }
+#logo, #logo a { height: 101px; width: 220px; display: block; padding:0; }
+#logo { float: left; background: url(../images/templateImages/ra-optics-logo.png) no-repeat top left; margin-bottom: 50px; margin-right: 50px; }
+#logo address, #nav li span, #footer p a span { display: none; }
+.img-left { float: left; margin: 0 40px 10px 0; }
+.img-right { float: right; margin: 0 0 10px 40px; }
+
+/* main navigation */
+#nav { float: left; margin-top: 48px; }
+#nav li { display: inline; list-style: none; }
+#nav li a { display: inline-block; font-size: 14px; text-transform: lowercase; padding: 0 48px 20px 48px; border-bottom: 1px solid #0e363f; color: #e8e8e8; }
+#nav li a:hover { text-decoration: none; border-bottom: 1px solid #00a0ba; }
+#nav li #active { border-bottom: 1px solid #00a0ba; }
+
+/* main content area */
+#content-body-1, #content-body-2, #content-body-3 { padding-bottom: 50px; min-height: 360px; }
+#content-body-1 { background: url(../images/templateImages/ra-goggle-bg-1.png) no-repeat bottom right; }
+#content-body-2 { background: url(../images/templateImages/ra-goggle-bg-2.png) no-repeat bottom right; }
+#content-body-3 { background: url(../images/templateImages/ra-goggle-bg-3.png) no-repeat bottom right; }
+#content { width: 620px; margin-bottom: 25px; min-height: 320px; }
+#content a { color: #626262; }
+#content a h4 { font-weight: normal; }
+#content a h4:hover { text-decoration: underline; }
+.last { padding-bottom: 0; }
+
+/* footer */
+#footer p { font-size: 10px; color:#e9e9e9; margin-bottom: 0; padding: 0; }
+#footer p a { color:#e9e9e9; }
+#footer p strong { border: 1px solid red; }
+
+
+/* ############  Page Styles ############ */ 
+.team-member, .product { margin-top: 30px; background: url(../images/templateImages/content-bg.png); }
+.member-info, .product-info { float: left; margin: 0 15px 0 30px; width: 395px; padding-top: 10px; }
+.member-info p, .product-info p { margin-top: 20px; }
+.product-head p { margin-top: 0; }
+
+/* team page */
+.member-image { float: left; }
+.member-image ul { margin-top: 5px; }
+.member-image li, .member-info li { float: left; display: inline-block; list-style: none; }
+.member-image li { margin-right: 15px; }
+.member-image li + li + li { margin-right: 0; }
+.member-info li { margin-right: 20px; color: #e9e9e9; margin-bottom: 5px; }
+.member-info li span { font-weight: bold; color: #626262; }
+.member-info li + li + li + li { margin-bottom: 0; }
+
+
+/* product page */
+.product-info div p { padding: 0; color: #e9e9e9; }
+.product-info div p span { font-weight: bold; color: #626262; }
+
+/* contact page */
+.product-info div p { padding: 0; color: #e9e9e9; }
+
+/* Hides from IE5-mac \*/
+* html .team-member { background-image: none; background-color: #141416; } 
+* html .product { background-image: none; background-color: #141416; }
+* html #content { height: 320px; }
+* html #content-body-1 { height: 360px; }
+* html #content-body-2 { height: 360px; }
+* html #content-body-3 { height: 360px; }
+/* End hide from IE5-mac */ 

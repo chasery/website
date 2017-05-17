@@ -1,0 +1,101 @@
+/* CSS Document */
+
+/* General Styles */
+body { font-family: Verdana, Arial, "Trebuchet MS"; font-size: 12px; background: url(images/siteBG.jpg) top left no-repeat; color: #323232; padding: 0; margin: 0; text-align: left; height: 100%; }
+.clear { clear: left; clear: right; clear:both; } 
+.left { float: left; display: inline; }
+.right { float: right; display: inline; }
+.decimal { text-align:right }
+
+
+/* Page Elements */
+img { margin: 0; padding: 0; }
+h1 span { display:none; }
+h2 span { display:none; }
+p { padding:0; margin: 0 10px 15px 0; text-align: left; }
+div { padding: 0; margin: 0; }
+a { text-decoration: none; outline: none; font-weight: bold; color: #7d7d7d; }
+a img { border: none; }
+address { font-style: normal; }
+
+
+/* Template Style */
+#wrapper { width: 919px; margin: 0 auto; margin-top: 63px; margin-left: 47px; }
+
+#leftColumn { float: left; padding-top: 8px; }
+#chaseryLogo { width: 228px; height: 68px; }
+#chaseryLogo h1 { background: url(images/chaseryLogo.gif) top left no-repeat; width: 228px; height: 68px; margin: 0; }
+#infoWrapper { background: url(images/infoBG.gif) top left repeat-y; margin-top: 28px; padding: 0; }
+#infoFooter { background: url(images/infoFooter.jpg) top left no-repeat; width: 228px; height: 28px; }
+.infoList { display: inline-block; clear: both; width: 170px; margin-top: 5px; margin-bottom: 0; padding: 0; }
+.infoList dt { display: inline-block; clear: both; margin-top: 15px; padding: 1px 0; width: 100%; background-color: #ffffff; font-weight: bold; }
+.infoList dd { display: inline-block; clear: both; padding: 0; margin: 3px 0 0 0; width: 100%; font-weight: bold; color: #7d7d7d; }
+
+#rightColumn { float: left; width: 667px; margin-left: 20px; }
+ /* Navagation */
+#nav { background: url(images/navBG.jpg) top left no-repeat; float: left; width: 668px; height: 56px; position: relative; margin-bottom: 49px; }
+#mainNav li { list-style: none; margin: 0; padding: 0; position: absolute; top: 0; }
+#mainNav li, #mainNav a { display: block; height: 56px; }
+#navAbout { left: 0; width: 223px; }
+#navWork { left: 223px; width: 223px; }
+#navContact { left: 446px; width: 222px; }
+#navAbout a { left: 0px; width: 222px; }
+#navWork a { left: 223px; width: 222px; }
+#navContact a { left: 446px; width: 222px; }
+#mainNav span { display: none; }
+
+ /* Footer */
+#footer { margin: 5px 0 25px 0; color: #989898; }
+#footer p { margin: 0; }
+#footer a { padding-left: 15px; font-weight: normal; color: #989898; }
+.footerBorder { padding-right: 15px; }
+
+
+/* Page Styles */
+#aboutContent, #workContent, #contactContent { background: url(images/bodyBG.jpg) bottom right no-repeat; padding-bottom: 50px; }
+#avatar { display: block; width: 170px; margin-top: 1px; padding: 5px 0; font-weight: normal; background-color: #323232; color: #e3e3e3; text-align: center; }
+
+/* About Page */
+#infoAbout { background: url(images/infoHeaderA.jpg) top left no-repeat; padding: 40px 0 0 30px; }
+#infoAbout span { color: #ee145b; }
+
+#aboutHeader { width: 67px; height: 22px; margin-bottom: 14px; }
+#aboutHeader h2 { background: url(images/aboutHeader.jpg) top left no-repeat; width: 67px; height: 22px; margin: 0; }
+#aboutContent p { line-height: 16px; }
+.resumeButton { display: block; margin-top: 30px; }
+
+/* Work Page */
+#infoWork { background: url(images/infoHeaderW.jpg) top left no-repeat; padding: 40px 0 0 30px; }
+#infoWork span { color: #98d000; }
+
+#workHeader { width: 57px; height: 22px; margin-bottom: 14px; }
+#workHeader h2 { background: url(images/workHeader.jpg) top left no-repeat; width: 57px; height: 22px; margin: 0; }
+.portfolioHeader { padding: 3px 10px; background-color: #dfdfdf; }
+.portfolioHeader h3 { margin: 0; font-size: 12px; font-weight: bold; color: #98d000; }
+.portfolioHeader h3 span { font-weight: normal; color: #323232; }
+.portfolioBody { background: url(images/workBG.gif) top left no-repeat; margin-bottom: 20px; padding: 10px; }
+.portfolioImg { display: block; height: 168px; margin-bottom: 5px; padding: 0; }
+.launch { display: block; background: url(images/launchButton.gif) top left no-repeat; width: 69px; height: 22px; }
+.portfolioFooter a { font-weight: bold; color: #323232; }
+.portfolioFooter p  { margin: 0; padding: 0; padding-right: 0; }
+.portfolioFooter p span { font-weight: bold; }
+
+/* Contact Page */
+#infoContact { background: url(images/infoHeaderC.jpg) top left no-repeat; padding: 40px 0 0 30px; }
+#infoContact span { color: #30bdf3; }
+
+#contactHeader { width: 89px; height: 22px; margin-bottom: 14px; }
+#contactHeader h2 { background: url(images/contactHeader.jpg) top left no-repeat; width: 89px; height: 22px; margin: 0; }
+#contactForm tr td { padding: 0; vertical-align: top; }
+.contactLabel { text-align: right; }
+#contactContent label { display: block; margin-top: 2px; font-size: 18px; }
+#contactContent label span { color: #30bdf3; }
+#contactContent input, #contactContent textarea { display: block; font-size: 16px; color: #7d7d7d; margin: 0 0 20px 30px; padding: 4px; background-color: #f1f1f1; border: 1px solid #dfdfdf; font-family: Verdana, Arial, "Trebuchet MS"; }
+/* Hides from IE5-mac \*/
+* html #contactContent input, #contactContent textarea { margin-top: -1px; margin-bottom: 19px; } /* -1px margin as ie6 has an extra 1px margin on input fields and textareas */
+/* End hide from IE5-mac */ 
+#submit { display: block; background: url(images/sendButton.gif) top left no-repeat; width: 75px; height: 30px; margin-left: 30px; }
+#error { margin-left: 20px; font-size: 12px; }
+#error dl, #error dl dd { margin: 0; }
+#error dt { margin-bottom: 2px; font-size: 16px; font-weight: bold; }
+#error dl dd span { color: #30bdf3; }
