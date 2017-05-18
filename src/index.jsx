@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWorld from './components/HelloWorld.jsx';
-import './styles/app.scss';
+import Header from './components/Header.jsx';
+import './assets/css/app.scss';
 ReactDOM.render(
-   <HelloWorld />,
-   document.getElementById('app')
+    <Header />,
+    document.getElementById('Portfolio')
 );
