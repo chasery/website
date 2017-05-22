@@ -4,12 +4,13 @@ export class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <ReactSVG
-                    path="/assets/svg/chasery-logo.svg"
-                    className="Header-logo"
-                    evalScript="always"
-                />
-                <h1 className="Header-text">A user experience designer and developer</h1>
+                <div className="Header-logo">
+                    <ReactSVG
+                        path="/assets/svg/chasery-logo.svg"
+                        evalScript="always"
+                    />
+                </div>
+                <h1 className="Header-subHeading"><span className="u-isHidden">Ryan Chase is</span>A user experience visual designer and front end developer</h1>
             </div>
         );
     }
