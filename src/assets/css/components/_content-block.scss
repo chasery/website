@@ -1,0 +1,68 @@
+$ContentBlock-label-margin-top: $m-space;
+$ContentBlock-label-color: $white;
+$ContentBlock-label-margin-bottom: $xs-space;
+$ContentBlock-label-size: $label;
+$ContentBlock-label-weight: $label-weight;
+
+$ContentBlock-list-padding-left: $l-space;
+
+$ContentBlock-item-color: $white;
+$ContentBlock-item-margin-right: $s-space;
+$ContentBlock-item-size: $content;
+$ContentBlock-item-weight: $content-weight;
+
+$ContentBlock-text-color: $white;
+$ContentBlock-text-size: $content;
+$ContentBlock-text-weight: $content-weight;
+
+.ContentBlock {
+    display: flex;
+    flex-direction: column;
+
+    & + & {
+        margin-top: $ContentBlock-label-margin-top;
+    }
+    &-label {
+        // Layout
+        font-size: $ContentBlock-label-size;
+        margin-bottom: $ContentBlock-label-margin-bottom;
+        // Theme
+        color: $ContentBlock-label-color;
+        font-weight: $ContentBlock-label-weight;
+    }
+    // Content block with a list
+    &-list {
+        padding-left: $ContentBlock-list-padding-left;
+    }
+    &-item {
+        // Layout
+        font-size: $ContentBlock-item-size;
+        //margin-right: $ContentBlock-item-margin-right;
+        // Theme
+        color: $ContentBlock-item-color;
+        font-weight: $ContentBlock-item-weight;
+    }
+    &--inlineList {
+        .ContentBlock-list {
+            padding-left: 0;
+        }
+        .ContentBlock-item {
+            display: inline-block;
+
+            &:after {
+                content: ",\00a0";
+            }
+            &:last-child:after {
+                content: "";
+            }
+        }
+    }
+    // Content block with a paragraph
+    &-text {
+        // Layout
+        font-size: $ContentBlock-text-size;
+        // Theme
+        color: $ContentBlock-text-color;
+        font-weight: $ContentBlock-text-weight;
+    }
+}

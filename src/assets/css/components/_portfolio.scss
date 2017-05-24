@@ -1,0 +1,11 @@
+#Portfolio {
+	display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+	&-wrapper {
+		display: flex;
+	    flex-direction: column;
+        max-width: 66vw
+	}
+}

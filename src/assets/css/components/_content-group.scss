@@ -1,0 +1,43 @@
+$ContentGroup-margin-top: $l-space;
+
+$ContentGroup-subHeader-border: $border;
+$ContentGroup-subHeader-color: $dove-gray;
+$ContentGroup-subHeader-margin-bottom: $m-space;
+$ContentGroup-subHeader-padding-bottom: $xs-space;
+$ContentGroup-subHeader-size: $sub-heading;
+$ContentGroup-subHeader-weight: $sub-heading-weight;
+
+$ContentGroup-contentBlockWrapper-margin-bottom: $m-space;
+
+.ContentGroup {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    & + & {
+        margin-top: $ContentGroup-margin-top;
+    }
+    &-subHeader {
+        // Layout
+        border-bottom: $ContentGroup-subHeader-border;
+        font-size: $ContentGroup-subHeader-size;
+        margin-bottom: $ContentGroup-subHeader-margin-bottom;
+        padding-bottom: $ContentGroup-subHeader-padding-bottom;
+        // Theme
+        color: $ContentGroup-subHeader-color;
+        font-weight: $ContentGroup-subHeader-weight;
+    }
+    &-contentBlockWrapper {
+        display: flex;
+        margin-bottom: $ContentGroup-contentBlockWrapper-margin-bottom;
+
+        .ContentBlock {
+            flex-grow: 1
+        }
+        .ContentBlock + .ContentBlock {
+            flex-grow: 0;
+            margin-top: 0;
+            min-width: calc(50% - 4rem);
+        }
+    }
+}
