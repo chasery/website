@@ -12,9 +12,12 @@ $content-color: $white;
 body {
     // Layout
     display: flex;
-    flex-direction: column;
     // Theme
     background: $body-bg;
     color: $content-color;
     font-family: 'Montserrat', sans-serif;
+
+	abbr {
+		text-decoration: none;
+	}
 }

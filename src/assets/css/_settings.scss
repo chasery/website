@@ -5,12 +5,22 @@ $dove-gray: #707070;
 $mine-shaft: #1f1f1f;
 $white: #ffffff;
 
-// Font Sizes
+// Font Sizes & Weights
 $heading: 1.5rem;
+$heading-weight: 300;
 $sub-heading: 1.125rem;
+$sub-heading-weight: 300;
+$label: 1rem;
+$label-weight: 300;
 $content: 1rem;
+$content-weight: 400;
+
+// Borders
+$border: 0.0625rem solid $dove-gray;
 
 // Spacing
+$xxs-space: 0.0625rem;
+$xs-space: 0.25rem;
 $s-space: 0.5rem;
 $m-space: 1rem;
 $l-space: 2rem;
