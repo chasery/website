@@ -1,8 +1,10 @@
 $ContentBlock-label-margin-top: $m-space;
 $ContentBlock-label-color: $white;
-$ContentBlock-label-margin-bottom: $s-space;
+$ContentBlock-label-margin-bottom: $xs-space;
 $ContentBlock-label-size: $label;
 $ContentBlock-label-weight: $label-weight;
+
+$ContentBlock-list-padding-left: $l-space;
 
 $ContentBlock-item-color: $white;
 $ContentBlock-item-margin-right: $s-space;
@@ -29,23 +31,33 @@ $ContentBlock-text-weight: $content-weight;
         font-weight: $ContentBlock-label-weight;
     }
     // Content block with a list
+    &-list {
+        padding-left: $ContentBlock-list-padding-left;
+    }
     &-item {
         // Layout
-        display: inline-block;
         font-size: $ContentBlock-item-size;
         //margin-right: $ContentBlock-item-margin-right;
         // Theme
         color: $ContentBlock-item-color;
         font-weight: $ContentBlock-item-weight;
-
-        &:after {
-            content: ",\00a0";
+    }
+    &--inlineList {
+        .ContentBlock-list {
+            padding-left: 0;
         }
-        &:last-child:after {
-            content: "";
+        .ContentBlock-item {
+            display: inline-block;
+
+            &:after {
+                content: ",\00a0";
+            }
+            &:last-child:after {
+                content: "";
+            }
         }
     }
-    // Content block with text
+    // Content block with a paragraph
     &-text {
         // Layout
         font-size: $ContentBlock-text-size;

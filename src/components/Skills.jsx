@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 export class Skills extends Component {
     render() {
         return (
-            <div className="Skills">
-                <h2 className="Skills-header">Skills</h2>
-                <div className="Skills-content">
-                    <div className="Skills-groupWrapper">
-                        <div className="Skills-group">
-                            <h3 className="Skills-subHeader"><abbr title="User Experience">UX</abbr> Visual Designer</h3>
-                            <div className="ContentBlock">
+            <div className="Section Section--skills">
+                <h2 className="Section-header">Skills</h2>
+                <div className="Section-content">
+                    <div className="Section-contentGroupWrapper">
+                        <div className="ContentGroup">
+                            <h3 className="ContentGroup-subHeader"><abbr title="User Experience">UX</abbr> Visual Designer</h3>
+                            <div className="ContentBlock ContentBlock--inlineList">
                                 <label className="ContentBlock-label" htmlFor="process">Process</label>
                                 <ul className="ContentBlock-list" id="process">
                                     <li className="ContentBlock-item">User Testing</li>
@@ -21,7 +21,7 @@ export class Skills extends Component {
                                     <li className="ContentBlock-item">User Acceptance Testing</li>
                                 </ul>
                             </div>
-                            <div className="ContentBlock">
+                            <div className="ContentBlock ContentBlock--inlineList">
                                 <label className="ContentBlock-label" htmlFor="applications">Applications</label>
                                 <ul className="ContentBlock-list" id="applications">
                                     <li className="ContentBlock-item">Sketch</li>
@@ -35,10 +35,10 @@ export class Skills extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="Skills-groupWrapper">
-                        <div className="Skills-group">
-                            <h3 className="Skills-subHeader">Front End Developer</h3>
-                            <div className="ContentBlock">
+                    <div className="Section-contentGroupWrapper">
+                        <div className="ContentGroup">
+                            <h3 className="ContentGroup-subHeader">Front End Developer</h3>
+                            <div className="ContentBlock ContentBlock--inlineList">
                                 <label className="ContentBlock-label" htmlFor="languages">Languages</label>
                                 <ul className="ContentBlock-list" id="languages">
                                     <li className="ContentBlock-item"><abbr title="Hypertext Markup Language">HTML</abbr></li>
@@ -48,7 +48,7 @@ export class Skills extends Component {
                                     <li className="ContentBlock-item">TypeScript</li>
                                 </ul>
                             </div>
-                            <div className="ContentBlock">
+                            <div className="ContentBlock ContentBlock--inlineList">
                                 <label className="ContentBlock-label" htmlFor="frameworks">Frameworks</label>
                                 <ul className="ContentBlock-list" id="frameworks">
                                     <li className="ContentBlock-item">Angular</li>
@@ -57,7 +57,7 @@ export class Skills extends Component {
                                     <li className="ContentBlock-item">React</li>
                                 </ul>
                             </div>
-                            <div className="ContentBlock">
+                            <div className="ContentBlock ContentBlock--inlineList">
                                 <label className="ContentBlock-label" htmlFor="compilers">Task Runners & Compilers</label>
                                 <ul className="ContentBlock-list" id="compilers">
                                     <li className="ContentBlock-item">WebPack</li>
@@ -65,7 +65,7 @@ export class Skills extends Component {
                                     <li className="ContentBlock-item">Babel</li>
                                 </ul>
                             </div>
-                            <div className="ContentBlock">
+                            <div className="ContentBlock ContentBlock--inlineList">
                                 <label className="ContentBlock-label" htmlFor="other">Other</label>
                                 <ul className="ContentBlock-list" id="other">
                                     <li className="ContentBlock-item">Agile</li>
