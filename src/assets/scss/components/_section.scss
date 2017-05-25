@@ -49,4 +49,7 @@ $Section--skills-contentGroupWrapper-padding: $xxl-space;
             }
         }
     }
+    &--downloadResume {
+        flex-direction: row;
+    }
 }

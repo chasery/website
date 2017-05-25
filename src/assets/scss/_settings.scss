@@ -16,7 +16,10 @@ $content: 1rem;
 $content-weight: 400;
 
 // Borders
-$border: 0.0625rem solid $dove-gray;
+$border-carnation: 0.0625rem solid $carnation;
+$border-dove-gray: 0.0625rem solid $dove-gray;
+$border-white: 0.0625rem solid $white;
+$border-radius: 0.25rem;
 
 // Spacing
 $xxs-space: 0.0625rem;
@@ -26,3 +29,6 @@ $m-space: 1rem;
 $l-space: 1.5rem;
 $xl-space: 3rem;
 $xxl-space: 4rem;
+
+// Animation
+$cubic-bezier: cubic-bezier(0.4, 0.0, 0.2, 1);
