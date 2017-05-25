@@ -1,5 +1,5 @@
-$Button-transition-in: 150ms;
-$Button-transition-out: 200ms;
+$Button-transition-in: $transition-in;
+$Button-transition-out: $transition-out;
 $Button-background-color: transparent;
 $Button-border: $border-carnation;
 $Button-border-hover: $border-white;

@@ -1,0 +1,54 @@
+$Footer-background-color: $cod-gray;
+$Footer-height: 4rem;
+$Footer-width: 100%;
+
+$Footer-list-margin-right: $xl-space;
+
+$Footer-item-margin-left: $xl-space;
+
+$Footer-anchor-transition-in: $transition-in;
+$Footer-anchor-transition-out: $transition-out;
+$Footer-anchor-cubic-bezier: $cubic-bezier;
+$Footer-anchor-color: $carnation;
+$Footer-anchor-color-hover: $white;
+$Footer-anchor-size: $sub-heading;
+$Footer-anchor-weight: $sub-heading-weight;
+
+.Footer {
+    // Layout
+    align-items: flex-end;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: $Footer-height;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    width: $Footer-width;
+    // Theme
+    background-color: $Footer-background-color;
+
+    &-list {
+        margin-right: $Footer-list-margin-right;
+    }
+    &-item {
+        display: inline-block;
+
+        & + & {
+            margin-left: $Footer-item-margin-left;
+        }
+    }
+    &-anchor {
+        // Layout
+        font-size: $Footer-anchor-size;
+        // Theme
+        color: $Footer-anchor-color;
+        font-weight: $Footer-anchor-weight;
+        transition: color $Footer-anchor-transition-out $Footer-anchor-cubic-bezier;
+
+        &:hover, &:focus {
+            color: $Footer-anchor-color-hover;
+            transition: color $Footer-anchor-transition-in $Footer-anchor-cubic-bezier;
+        }
+    }
+}
