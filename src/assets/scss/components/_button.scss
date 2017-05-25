@@ -1,0 +1,69 @@
+$Button-transition-in: 150ms;
+$Button-transition-out: 200ms;
+$Button-background-color: transparent;
+$Button-border: $border-carnation;
+$Button-border-hover: $border-white;
+$Button-border-raidus: $border-radius;
+$Button-cubic-bezier: $cubic-bezier;
+$Button-padding: $m-space 2rem;
+
+$Button-icon-margin-right: $m-space;
+$Button-icon-padding-top: $xs-space;
+$Button-icon-stroke: $carnation;
+$Button-icon-stroke-hover: $white;
+
+$Button-text-color: $carnation;
+$Button-text-color-hover: $white;
+$Button-text-size: $sub-heading;
+$Button-text-weight: $sub-heading-weight;
+
+.Button {
+    // Layout
+    align-items: center;
+    border: $Button-border;
+    display: flex;
+    flex-grow: 0;
+    padding: $Button-padding;
+    // Theme
+    background-color: $Button-background-color;
+    border-radius: $Button-border-raidus;
+    transition: border $Button-transition-out $Button-cubic-bezier;
+
+    &-icon {
+        margin-right: $Button-icon-margin-right;
+        padding-top: $Button-icon-padding-top;
+
+        path {
+            stroke: $Button-icon-stroke;
+            transition: stroke $Button-transition-out $Button-cubic-bezier;
+        }
+    }
+    &-text {
+        color: $Button-text-color;
+        font-size: $Button-text-size;
+        font-weight: $Button-text-weight;
+        transition: color $Button-transition-out $Button-cubic-bezier;
+    }
+    &:hover, &:focus {
+        transition: border $Button-transition-in $Button-cubic-bezier;
+        border: $Button-border-hover;
+
+        .Button-icon path {
+            stroke: $Button-icon-stroke-hover;
+            transition: stroke $Button-transition-in $Button-cubic-bezier;
+        }
+        .Button-text {
+            color: $Button-text-color-hover;
+            transition: color $Button-transition-in $Button-cubic-bezier;
+        }
+    }
+}
+
+@keyframes buttonHover {
+    from {
+        border: $Button-border;
+    }
+    to {
+        border: $Button-border-hover;
+    }
+}

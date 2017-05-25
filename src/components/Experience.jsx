@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 export class Experience extends Component {
     render() {
         return (
-            <div className="Section Section--experience">
+            <div className="Section">
                 <h2 className="Section-header">Experience</h2>
                 <div className="Section-content">
                     <div className="ContentGroup">
