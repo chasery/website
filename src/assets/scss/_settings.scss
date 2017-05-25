@@ -1,13 +1,15 @@
 // Colors
-$carnation: #f05353;
-$cod-gray: #141414;
-$dove-gray: #707070;
 $mine-shaft: #1f1f1f;
+$outer-space: #263238;
+$pale-sky: #6e7e87;
+$porcelain-1: #f4f5f6;
+$porcelain-2: #e9ebed;
+$san-marino: #3f51b5;
 $white: #ffffff;
 
 // Font Sizes & Weights
 $heading: 1.5rem;
-$heading-weight: 300;
+$heading-weight: 400;
 $sub-heading: 1.125rem;
 $sub-heading-weight: 300;
 $label: 1rem;
@@ -16,9 +18,9 @@ $content: 1rem;
 $content-weight: 400;
 
 // Borders
-$border-carnation: 0.0625rem solid $carnation;
-$border-dove-gray: 0.0625rem solid $dove-gray;
-$border-white: 0.0625rem solid $white;
+$border-san-marino: 0.0625rem solid $san-marino;
+$border-pale-sky: 0.0625rem solid $pale-sky;
+$border-outer-space: 0.0625rem solid $outer-space;
 $border-radius: 0.25rem;
 
 // Spacing
@@ -32,3 +34,5 @@ $xxl-space: 4rem;
 
 // Animation
 $cubic-bezier: cubic-bezier(0.4, 0.0, 0.2, 1);
+$transition-in: 150ms;
+$transition-out: 200ms;

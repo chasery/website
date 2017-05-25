@@ -19,7 +19,7 @@ export class Experience extends Component {
                         </div>
                         <div className="ContentBlock">
                             <label className="ContentBlock-label" htmlFor="about1">About</label>
-                            <p className="ContentBlock-text" id="about1">Lead UX Designer for the RAPIDGate platform; A vetting and credential system for contractors accessing military
+                            <p className="ContentBlock-text" id="about1">Lead UX Visual Designer for the RAPIDGate platform; A vetting and credential system for contractors accessing military
 facilities.</p>
                         </div>
                         <div className="ContentBlock">

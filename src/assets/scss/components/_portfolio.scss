@@ -1,11 +1,21 @@
+$Portfolio-bg: $porcelain-1;
+$Portfolio-padding-bottom: 10rem;
+
+$Portfolio-wrapper-max-width: 66vw;
+
 #Portfolio {
+	// Layout
 	display: flex;
     flex-grow: 1;
     justify-content: center;
+	padding-bottom: $Portfolio-padding-bottom;
+
+	// Theme
+	background-color: $Portfolio-bg;
 
 	&-wrapper {
 		display: flex;
 	    flex-direction: column;
-        max-width: 66vw
+        max-width: $Portfolio-wrapper-max-width;
 	}
 }

@@ -1,21 +1,22 @@
-$Button-transition-in: 150ms;
-$Button-transition-out: 200ms;
-$Button-background-color: transparent;
-$Button-border: $border-carnation;
-$Button-border-hover: $border-white;
+$Button-bg: transparent;
+$Button-bg-hover: $san-marino;
+$Button-border: $border-san-marino;
+$Button-border-hover: $border-san-marino;
 $Button-border-raidus: $border-radius;
 $Button-cubic-bezier: $cubic-bezier;
 $Button-padding: $m-space 2rem;
+$Button-transition-in: $transition-in;
+$Button-transition-out: $transition-out;
 
 $Button-icon-margin-right: $m-space;
 $Button-icon-padding-top: $xs-space;
-$Button-icon-stroke: $carnation;
+$Button-icon-stroke: $san-marino;
 $Button-icon-stroke-hover: $white;
 
-$Button-text-color: $carnation;
+$Button-text-color: $san-marino;
 $Button-text-color-hover: $white;
 $Button-text-size: $sub-heading;
-$Button-text-weight: $sub-heading-weight;
+$Button-text-weight: 400;
 
 .Button {
     // Layout
@@ -25,9 +26,9 @@ $Button-text-weight: $sub-heading-weight;
     flex-grow: 0;
     padding: $Button-padding;
     // Theme
-    background-color: $Button-background-color;
+    background-color: $Button-bg;
     border-radius: $Button-border-raidus;
-    transition: border $Button-transition-out $Button-cubic-bezier;
+    transition: all $Button-transition-out $Button-cubic-bezier;
 
     &-icon {
         margin-right: $Button-icon-margin-right;
@@ -45,8 +46,9 @@ $Button-text-weight: $sub-heading-weight;
         transition: color $Button-transition-out $Button-cubic-bezier;
     }
     &:hover, &:focus {
-        transition: border $Button-transition-in $Button-cubic-bezier;
+        background-color: $Button-bg-hover;
         border: $Button-border-hover;
+        transition: all $Button-transition-in $Button-cubic-bezier;
 
         .Button-icon path {
             stroke: $Button-icon-stroke-hover;

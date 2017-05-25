@@ -1,0 +1,36 @@
+$Footer-background-color: $mine-shaft;
+$Footer-height: 4rem;
+$Footer-width: 100%;
+
+$Footer-list-margin-right: $l-space;
+
+$Footer-item-margin-left: $xxs-space;
+
+.Footer {
+    // Layout
+    align-items: flex-end;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: $Footer-height;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    width: $Footer-width;
+    // Theme
+    background-color: $Footer-background-color;
+    box-shadow: 0 0.5rem 0.625rem 0.0625rem rgba(0, 0, 0, .14), 0 0.1875rem 0.875rem 0.125rem rgba(0, 0, 0, .12), 0 0.3215rem 0.3215rem -0.1875rem rgba(0, 0, 0, .4);
+
+    &-list {
+        display: flex;
+        flex-grow: 1;
+        margin-right: $Footer-list-margin-right;
+    }
+    &-item {
+        display: flex;
+
+        & + & {
+            margin-left: $Footer-item-margin-left;
+        }
+    }
+}

@@ -7,14 +7,14 @@
 
 // Base Style
 $body-bg: $mine-shaft;
-$content-color: $white;
+$body-color: $mine-shaft;
 
 body {
     // Layout
     display: flex;
     // Theme
     background: $body-bg;
-    color: $content-color;
+    color: $body-color;
     font-family: 'Montserrat', sans-serif;
 
 	abbr {
