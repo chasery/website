@@ -1,17 +1,18 @@
 $ContentBlock-label-margin-top: $m-space;
-$ContentBlock-label-color: $white;
+$ContentBlock-label-color: $outer-space;
 $ContentBlock-label-margin-bottom: $xs-space;
 $ContentBlock-label-size: $label;
 $ContentBlock-label-weight: $label-weight;
 
 $ContentBlock-list-padding-left: $l-space;
 
-$ContentBlock-item-color: $white;
+$ContentBlock-item-color: $outer-space;
+$ContentBlock-item-line-height: 1.5rem;
 $ContentBlock-item-margin-right: $s-space;
 $ContentBlock-item-size: $content;
 $ContentBlock-item-weight: $content-weight;
 
-$ContentBlock-text-color: $white;
+$ContentBlock-text-color: $outer-space;
 $ContentBlock-text-size: $content;
 $ContentBlock-text-weight: $content-weight;
 
@@ -37,6 +38,7 @@ $ContentBlock-text-weight: $content-weight;
     &-item {
         // Layout
         font-size: $ContentBlock-item-size;
+        line-height: $ContentBlock-item-line-height;
         //margin-right: $ContentBlock-item-margin-right;
         // Theme
         color: $ContentBlock-item-color;
