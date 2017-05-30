@@ -47,13 +47,13 @@ facilities.</p>
                         </div>
                         <div className="ContentBlock">
                             <label className="ContentBlock-label" htmlFor="about2">About</label>
-                            <p className="ContentBlock-text" id="about2">Front end developer tasked with creating a responsive infastructure for a fast growing powersports dealership website
+                            <p className="ContentBlock-text" id="about2">Front end developer tasked with creating a responsive infrastructure for a fast growing power sports dealership website
 provider.</p>
                         </div>
                         <div className="ContentBlock">
                             <label className="ContentBlock-label" htmlFor="accomplishments2">Accomplishments</label>
                             <ul className="ContentBlock-list" id="accomplishments2">
-                                <li className="ContentBlock-item">Collaberated with backend developers to create a responsive framework.</li>
+                                <li className="ContentBlock-item">Collaborated with backend developers to create a responsive framework.</li>
                                 <li className="ContentBlock-item">Created front end standards for the company.</li>
                                 <li className="ContentBlock-item">Trained and lead a team of eleven front end developers.</li>
                             </ul>
