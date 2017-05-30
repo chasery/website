@@ -25,7 +25,7 @@ export class Skills extends Component {
                                 <label className="ContentBlock-label" htmlFor="applications">Applications</label>
                                 <ul className="ContentBlock-list" id="applications">
                                     <li className="ContentBlock-item">Sketch</li>
-                                    <li className="ContentBlock-item">Keynotes</li>
+                                    <li className="ContentBlock-item">Keynote</li>
                                     <li className="ContentBlock-item">InVision</li>
                                     <li className="ContentBlock-item">Adobe Experience Design</li>
                                     <li className="ContentBlock-item">After Effects</li>

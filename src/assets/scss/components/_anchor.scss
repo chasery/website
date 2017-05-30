@@ -1,16 +1,18 @@
 $Anchor-bg: transparent;
-$Anchor-bg-hover: $san-marino;
+$Anchor-bg-hover: $white;
 $Anchor-cubic-bezier: $cubic-bezier;
 $Anchor-padding: 0 $l-space;
 $Anchor-transition-in: $transition-in;
 $Anchor-transition-out: $transition-out;
 
 $Anchor-icon-margin-right: $m-space;
+$Anchor-icon-fill: $white;
+$Anchor-icon-fill-hover: $san-marino;
 $Anchor-icon-stroke: $white;
-$Anchor-icon-stroke-hover: $white;
+$Anchor-icon-stroke-hover: $san-marino;
 
 $Anchor-text-color: $white;
-$Anchor-text-color-hover: $white;
+$Anchor-text-color-hover: $san-marino;
 $Anchor-text-size: $sub-heading;
 $Anchor-text-weight: 400;
 
@@ -52,6 +54,20 @@ $Anchor-text-weight: 400;
         .Anchor-text {
             color: $Anchor-text-color-hover;
             transition: color $Anchor-transition-in $Anchor-cubic-bezier;
+        }
+    }
+    &--fillIcon {
+        .Anchor-icon path {
+            fill: $Anchor-icon-fill;
+            //stroke: none;
+            transition: fill $Anchor-transition-out $Anchor-cubic-bezier;
+        }
+        &:hover, &:focus {
+            .Anchor-icon path {
+                fill: $Anchor-icon-fill-hover;
+                //stroke: none;
+                transition: fill $Anchor-transition-in $Anchor-cubic-bezier;
+            }
         }
     }
 }

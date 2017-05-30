@@ -17,7 +17,7 @@ export class Footer extends Component {
                         </a>
                     </li>
                     <li className="Footer-item">
-                        <a className="Anchor" href="mailto:ryan@chasery.com">
+                        <a className="Anchor Anchor--fillIcon" href="mailto:ryan@chasery.com">
                             <span className="Anchor-icon">
                                 <ReactSVG
                                     path="/assets/svg/email-icon.svg"
