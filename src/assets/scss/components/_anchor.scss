@@ -2,7 +2,8 @@ $Anchor: ".Anchor";
 $Anchor-bg: transparent;
 $Anchor-bg-hover: $white;
 $Anchor-cubic-bezier: $cubic-bezier;
-$Anchor-padding: $m-space 0;
+$Anchor-min-height: 4rem;
+$Anchor-padding: 0 $l-space;
 $Anchor-transition-in: $transition-in;
 $Anchor-transition-out: $transition-out;
 
@@ -23,7 +24,7 @@ $Anchor-text-weight: 400;
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    padding: $Anchor-padding;
+    min-height: $Anchor-min-height;
     // Theme
     background-color: $Anchor-bg;
     text-decoration: none;
@@ -71,5 +72,11 @@ $Anchor-text-weight: 400;
                 transition: fill $Anchor-transition-in $Anchor-cubic-bezier;
             }
         }
+    }
+}
+
+@media (min-width: $m-break) {
+    .Anchor {
+        padding: $Anchor-padding;
     }
 }

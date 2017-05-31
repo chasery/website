@@ -1,4 +1,6 @@
-$ContentGroup-margin-top: $l-space;
+$ContentGroup-margin-top: $m-space;
+
+$ContentGroup--half-space: $l-space;
 
 $ContentGroup-subHeader-border: $border-pale-sky;
 $ContentGroup-subHeader-color: $pale-sky;
@@ -26,5 +28,21 @@ $ContentGroup-contentBlockWrapper-margin-bottom: $m-space;
         // Theme
         color: $ContentGroup-subHeader-color;
         font-weight: $ContentGroup-subHeader-weight;
+    }
+}
+
+@media (min-width: $m-break) {
+    .ContentGroup {
+        & + & {
+            margin-top: calc(#{$ContentGroup-margin-top} * 2);
+        }
+        &--half {
+            margin: 0 $ContentGroup--half-space 0 0;
+            max-width: calc(50% - #{$ContentGroup--half-space});
+
+            & + & {
+                margin: 0 0 0 $ContentGroup--half-space;
+            }
+        }
     }
 }

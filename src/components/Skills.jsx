@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 export class Skills extends Component {
     render() {
         return (
-            <div className="Section Section--skills">
+            <div className="Section">
                 <h2 className="Section-header">Skills</h2>
                 <div className="Section-content">
-                    <div className="ContentGroup">
+                    <div className="ContentGroup ContentGroup--half">
                         <h3 className="ContentGroup-subHeader"><abbr title="User Experience">UX</abbr> Visual Designer</h3>
                         <div className="ContentBlock ContentBlock--inlineList">
                             <label className="ContentBlock-label" htmlFor="process">Process</label>
@@ -33,7 +33,7 @@ export class Skills extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div className="ContentGroup">
+                    <div className="ContentGroup ContentGroup--half">
                         <h3 className="ContentGroup-subHeader">Front End Developer</h3>
                         <div className="ContentBlock ContentBlock--inlineList">
                             <label className="ContentBlock-label" htmlFor="languages">Languages</label>

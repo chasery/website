@@ -1,4 +1,6 @@
+$Section-l-width: 66vw;
 $Section-margin-top: $l-space;
+$Section-m-width: 75vw;
 $Section-padding: 0 $m-space;
 
 $Section-header-color: $san-marino;
@@ -26,9 +28,26 @@ $Section--skills-contentGroupWrapper-padding: $xxl-space;
     }
     &-content {
         display: flex;
-        flex-direction: column;
-    }
-    &--row {
         flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: $m-break) {
+    .Section {
+        padding: 0;
+        width: $Section-m-width;
+
+        & + & {
+            margin-top: calc(#{$Section-margin-top} * 2);
+        }
+        &-header {
+            margin-bottom: calc(#{$Section-header-margin-bottom} * 2);
+        }
+    }
+}
+@media (min-width: $l-break) {
+    .Section {
+        width: $Section-l-width;
     }
 }

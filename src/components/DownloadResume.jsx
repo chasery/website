@@ -3,7 +3,7 @@ import ReactSVG from 'react-svg';
 export class DownloadResume extends Component {
     render() {
         return (
-            <div className="Section Section--row">
+            <div className="Section">
                 <form method="get" action="./assets/pdf/ryan-chase-resume.pdf">
                     <button className="Button">
                         <span className="Button-icon">

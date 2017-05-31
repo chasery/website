@@ -1,5 +1,5 @@
-$Header-margin: $l-space 0;
-$Header-padding: 0 $m-space;
+$Header-margin: $l-space;
+$Header-padding: $m-space;
 
 $Header-logo-margin-bottom: $s-space;
 
@@ -10,8 +10,8 @@ $Header-subHeading-size: $sub-heading;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: $Header-margin;
-    padding: $Header-padding;
+    margin: $Header-margin 0;
+    padding: 0 $Header-padding;
 
     &-logo {
         margin-bottom: $Header-logo-margin-bottom;
@@ -23,5 +23,13 @@ $Header-subHeading-size: $sub-heading;
         color: $Header-subHeading-color;
         font-weight: 300;
         text-align: center;
+        text-transform: capitalize;
+    }
+}
+
+@media (min-width: $m-break) {
+    .Header {
+		margin: calc(#{$Header-margin} * 2) 0;
+        padding: 0;
     }
 }

@@ -1,5 +1,8 @@
 $Footer-background-color: $san-marino;
-$Footer-margin-top: $xxl-space;
+$Footer-margin-top: $l-space;
+$Footer-width: 100%;
+
+$Footer-item-margin-left: $xxs-space;
 
 .Footer {
     // Layout
@@ -7,6 +10,7 @@ $Footer-margin-top: $xxl-space;
     flex-direction: column;
     justify-content: center;
     margin-top: $Footer-margin-top;
+    width: $Footer-width;
     // Theme
     background-color: $Footer-background-color;
     box-shadow: 0 0.5rem 0.625rem 0.0625rem rgba(0, 0, 0, .14), 0 0.1875rem 0.875rem 0.125rem rgba(0, 0, 0, .12), 0 0.3215rem 0.3215rem -0.1875rem rgba(0, 0, 0, .4);
@@ -17,5 +21,22 @@ $Footer-margin-top: $xxl-space;
     }
     &-item {
         display: flex;
+    }
+}
+
+@media (min-width: $m-break) {
+    .Footer {
+        bottom: 0;
+		flex-direction: row;
+        justify-content: flex-end;
+        left: 0;
+        position: fixed;
+
+        &-list {
+            flex-direction: row;
+        }
+        &-item {
+            margin-left: $Footer-item-margin-left;
+        }
     }
 }

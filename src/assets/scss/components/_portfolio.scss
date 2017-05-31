@@ -1,18 +1,24 @@
 $Portfolio-bg: $porcelain;
 
+$Portfolio-wrapper-margin-bottom: 8rem;
+
 #Portfolio {
 	// Layout
 	display: flex;
 	flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-
+	flex-grow: 1;
 	// Theme
 	background-color: $Portfolio-bg;
 
 	&-wrapper {
 		display: flex;
 	    flex-direction: column;
-		flex-grow: 1;
 	}
+}
+
+@media (min-width: $m-break) {
+    #Portfolio-wrapper {
+		align-items: center;
+		padding-bottom: $Portfolio-wrapper-margin-bottom;
+    }
 }
