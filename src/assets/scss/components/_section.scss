@@ -1,7 +1,8 @@
-$Section-margin-top: $xxl-space;
+$Section-margin-top: $l-space;
+$Section-padding: 0 $m-space;
 
 $Section-header-color: $san-marino;
-$Section-header-margin-bottom: $xl-space;
+$Section-header-margin-bottom: $m-space;
 $Section-header-size: $heading;
 $Section-header-weight: $heading-weight;
 
@@ -10,6 +11,7 @@ $Section--skills-contentGroupWrapper-padding: $xxl-space;
 .Section {
     display: flex;
     flex-direction: column;
+    padding: $Section-padding;
 
     & + & {
         margin-top: $Section-margin-top;
@@ -26,7 +28,7 @@ $Section--skills-contentGroupWrapper-padding: $xxl-space;
         display: flex;
         flex-direction: column;
     }
-    &--downloadResume {
+    &--row {
         flex-direction: row;
     }
 }

@@ -1,3 +1,5 @@
+$ContentBlock: ".ContentBlock";
+
 $ContentBlock-label-margin-top: $m-space;
 $ContentBlock-label-color: $outer-space;
 $ContentBlock-label-margin-bottom: $xs-space;
@@ -8,7 +10,6 @@ $ContentBlock-list-padding-left: $l-space;
 
 $ContentBlock-item-color: $outer-space;
 $ContentBlock-item-line-height: 1.5rem;
-$ContentBlock-item-margin-right: $s-space;
 $ContentBlock-item-size: $content;
 $ContentBlock-item-weight: $content-weight;
 
@@ -42,19 +43,19 @@ $ContentBlock-text-weight: $content-weight;
         flex-shrink: 1;
         font-size: $ContentBlock-item-size;
         line-height: $ContentBlock-item-line-height;
-        //margin-right: $ContentBlock-item-margin-right;
         // Theme
         color: $ContentBlock-item-color;
         font-weight: $ContentBlock-item-weight;
     }
     &--inlineList {
-        .ContentBlock-list {
+        #{$ContentBlock}-list {
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             padding-left: 0;
         }
-        .ContentBlock-item {
-            display: inline-block;
+        #{$ContentBlock}-item {
+            list-style: none;
 
             &:after {
                 content: ",\00a0";
