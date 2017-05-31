@@ -1,6 +1,8 @@
+$Anchor: ".Anchor";
 $Anchor-bg: transparent;
 $Anchor-bg-hover: $white;
 $Anchor-cubic-bezier: $cubic-bezier;
+$Anchor-min-height: 4rem;
 $Anchor-padding: 0 $l-space;
 $Anchor-transition-in: $transition-in;
 $Anchor-transition-out: $transition-out;
@@ -20,8 +22,9 @@ $Anchor-text-weight: 400;
     // Layout
     align-items: center;
     display: flex;
-    flex-grow: 0;
-    padding: $Anchor-padding;
+    flex-grow: 1;
+    justify-content: center;
+    min-height: $Anchor-min-height;
     // Theme
     background-color: $Anchor-bg;
     text-decoration: none;
@@ -47,27 +50,33 @@ $Anchor-text-weight: 400;
         background-color: $Anchor-bg-hover;
         transition: background $Anchor-transition-in $Anchor-cubic-bezier;
 
-        .Anchor-icon path {
+        #{$Anchor}-icon path {
             stroke: $Anchor-icon-stroke-hover;
             transition: stroke $Anchor-transition-in $Anchor-cubic-bezier;
         }
-        .Anchor-text {
+        #{$Anchor}-text {
             color: $Anchor-text-color-hover;
             transition: color $Anchor-transition-in $Anchor-cubic-bezier;
         }
     }
     &--fillIcon {
-        .Anchor-icon path {
+        #{$Anchor}-icon path {
             fill: $Anchor-icon-fill;
             //stroke: none;
             transition: fill $Anchor-transition-out $Anchor-cubic-bezier;
         }
         &:hover, &:focus {
-            .Anchor-icon path {
+            #{$Anchor}-icon path {
                 fill: $Anchor-icon-fill-hover;
                 //stroke: none;
                 transition: fill $Anchor-transition-in $Anchor-cubic-bezier;
             }
         }
+    }
+}
+
+@media (min-width: $m-break) {
+    .Anchor {
+        padding: $Anchor-padding;
     }
 }

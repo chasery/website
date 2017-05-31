@@ -1,21 +1,15 @@
 $Footer-background-color: $san-marino;
-$Footer-height: 4rem;
+$Footer-margin-top: $l-space;
 $Footer-width: 100%;
-
-$Footer-list-margin-right: $l-space;
 
 $Footer-item-margin-left: $xxs-space;
 
 .Footer {
     // Layout
-    align-items: flex-end;
-    bottom: 0;
     display: flex;
     flex-direction: column;
-    height: $Footer-height;
     justify-content: center;
-    left: 0;
-    position: fixed;
+    margin-top: $Footer-margin-top;
     width: $Footer-width;
     // Theme
     background-color: $Footer-background-color;
@@ -23,13 +17,25 @@ $Footer-item-margin-left: $xxs-space;
 
     &-list {
         display: flex;
-        flex-grow: 1;
-        margin-right: $Footer-list-margin-right;
+        flex-direction: column;
     }
     &-item {
         display: flex;
+    }
+}
 
-        & + & {
+@media (min-width: $m-break) {
+    .Footer {
+        bottom: 0;
+		flex-direction: row;
+        justify-content: flex-end;
+        left: 0;
+        position: fixed;
+
+        &-list {
+            flex-direction: row;
+        }
+        &-item {
             margin-left: $Footer-item-margin-left;
         }
     }

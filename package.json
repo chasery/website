@@ -7,7 +7,16 @@
         "dev": "webpack-dev-server --open --hot --inline"
     },
     "dependencies": {
+        "autoprefixer": "^7.1.1",
+        "browserslist": [
+            "> 1%",
+            "last 2 versions"
+        ],
         "homebrew": "^0.1.0",
+        "postcss-cssnext": "^2.11.0",
+        "postcss-import": "^10.0.0",
+        "postcss-loader": "^2.0.5",
+        "prop-types": "^15.5.10",
         "react": "^15.5.4",
         "react-dom": "^15.5.4",
         "react-svg": "^2.1.19"

@@ -1,5 +1,8 @@
 // This library allows us to combine paths easily
 const path = require('path');
+const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
     entry: path.resolve(__dirname, 'src','index.jsx'),
     output: {
@@ -16,8 +19,25 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                test: /\.s?css$/,
+                use: [
+                    { loader: 'style-loader', options: { sourceMap: true } },
+                    { loader: 'css-loader', options: { minimize: true, importLoaders: 1, sourceMap: true } },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            ident: 'postcss',
+                            sourceMap: true,
+                            plugins: () => {
+                                return [
+                                    require('autoprefixer')
+                                ]
+                            }
+                        }
+                    },
+                    // { loader: 'resolve-url-loader' },
+                    { loader: 'sass-loader', options: { sourceMap: true } }
+                ]
             }
         ]
     },

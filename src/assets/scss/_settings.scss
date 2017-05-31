@@ -27,9 +27,13 @@ $xxs-space: 0.0625rem;
 $xs-space: 0.25rem;
 $s-space: 0.5rem;
 $m-space: 1rem;
-$l-space: 1.5rem;
+$l-space: 2rem;
 $xl-space: 3rem;
 $xxl-space: 4rem;
+
+// Breakpoints
+$l-break: 90rem;
+$m-break: 64rem;
 
 // Animation
 $cubic-bezier: cubic-bezier(0.4, 0.0, 0.2, 1);

@@ -1,7 +1,10 @@
-$Section-margin-top: $xxl-space;
+$Section-l-width: 66vw;
+$Section-margin-top: $l-space;
+$Section-m-width: 75vw;
+$Section-padding: 0 $m-space;
 
 $Section-header-color: $san-marino;
-$Section-header-margin-bottom: $xl-space;
+$Section-header-margin-bottom: $m-space;
 $Section-header-size: $heading;
 $Section-header-weight: $heading-weight;
 
@@ -10,6 +13,7 @@ $Section--skills-contentGroupWrapper-padding: $xxl-space;
 .Section {
     display: flex;
     flex-direction: column;
+    padding: $Section-padding;
 
     & + & {
         margin-top: $Section-margin-top;
@@ -24,32 +28,26 @@ $Section--skills-contentGroupWrapper-padding: $xxl-space;
     }
     &-content {
         display: flex;
-        flex-direction: column;
-    }
-    &--skills {
-        .Section-content {
-            flex-direction: row;
-        }
-        .Section-contentGroupWrapper {
-            display: flex;
-            flex-grow: 0;
-            flex-shrink: 0;
-            min-width: 50%;
-            max-width: 50%;
-
-            &:nth-child(even) {
-                .ContentGroup {
-                    padding-left: $Section--skills-contentGroupWrapper-padding;
-                }
-            }
-            &:nth-child(odd) {
-                .ContentGroup {
-                    padding-right: $Section--skills-contentGroupWrapper-padding;
-                }
-            }
-        }
-    }
-    &--downloadResume {
         flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: $m-break) {
+    .Section {
+        padding: 0;
+        width: $Section-m-width;
+
+        & + & {
+            margin-top: calc(#{$Section-margin-top} * 2);
+        }
+        &-header {
+            margin-bottom: calc(#{$Section-header-margin-bottom} * 2);
+        }
+    }
+}
+@media (min-width: $l-break) {
+    .Section {
+        width: $Section-l-width;
     }
 }
