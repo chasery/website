@@ -27,17 +27,4 @@ $ContentGroup-contentBlockWrapper-margin-bottom: $m-space;
         color: $ContentGroup-subHeader-color;
         font-weight: $ContentGroup-subHeader-weight;
     }
-    &-contentBlockWrapper {
-        display: flex;
-        margin-bottom: $ContentGroup-contentBlockWrapper-margin-bottom;
-
-        .ContentBlock {
-            flex-grow: 1
-        }
-        .ContentBlock + .ContentBlock {
-            flex-grow: 0;
-            margin-top: 0;
-            min-width: calc(50% - 4rem);
-        }
-    }
 }

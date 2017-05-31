@@ -33,10 +33,13 @@ $ContentBlock-text-weight: $content-weight;
     }
     // Content block with a list
     &-list {
+        display: flex;
+        flex-direction: column;
         padding-left: $ContentBlock-list-padding-left;
     }
     &-item {
         // Layout
+        flex-shrink: 1;
         font-size: $ContentBlock-item-size;
         line-height: $ContentBlock-item-line-height;
         //margin-right: $ContentBlock-item-margin-right;
@@ -46,6 +49,8 @@ $ContentBlock-text-weight: $content-weight;
     }
     &--inlineList {
         .ContentBlock-list {
+            flex-direction: row;
+            flex-wrap: wrap;
             padding-left: 0;
         }
         .ContentBlock-item {

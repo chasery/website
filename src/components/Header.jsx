@@ -10,7 +10,7 @@ export class Header extends Component {
                         evalScript="always"
                     />
                 </div>
-                <h1 className="Header-subHeading"><span className="u-isHidden">Ryan Chase is</span>A user experience visual designer and front end developer</h1>
+                <h1 className="Header-subHeading"><span className="u-isHidden">Ryan Chase is </span>a user experience visual designer and front end developer</h1>
             </div>
         );
     }

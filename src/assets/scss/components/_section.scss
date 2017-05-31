@@ -26,29 +26,6 @@ $Section--skills-contentGroupWrapper-padding: $xxl-space;
         display: flex;
         flex-direction: column;
     }
-    &--skills {
-        .Section-content {
-            flex-direction: row;
-        }
-        .Section-contentGroupWrapper {
-            display: flex;
-            flex-grow: 0;
-            flex-shrink: 0;
-            min-width: 50%;
-            max-width: 50%;
-
-            &:nth-child(even) {
-                .ContentGroup {
-                    padding-left: $Section--skills-contentGroupWrapper-padding;
-                }
-            }
-            &:nth-child(odd) {
-                .ContentGroup {
-                    padding-right: $Section--skills-contentGroupWrapper-padding;
-                }
-            }
-        }
-    }
     &--downloadResume {
         flex-direction: row;
     }

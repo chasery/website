@@ -8,14 +8,10 @@ $Footer-item-margin-left: $xxs-space;
 
 .Footer {
     // Layout
-    align-items: flex-end;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     height: $Footer-height;
     justify-content: center;
-    left: 0;
-    position: fixed;
     width: $Footer-width;
     // Theme
     background-color: $Footer-background-color;

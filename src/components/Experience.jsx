@@ -7,15 +7,13 @@ export class Experience extends Component {
                 <div className="Section-content">
                     <div className="ContentGroup">
                         <h3 className="ContentGroup-subHeader">SureID</h3>
-                        <div className="ContentGroup-contentBlockWrapper">
-                            <div className="ContentBlock">
-                                <label className="ContentBlock-label" htmlFor="title1">Title</label>
-                                <p className="ContentBlock-text" id="title1"><abbr title="User Interface">UI</abbr>/<abbr title="User Experience">UX</abbr> Developer</p>
-                            </div>
-                            <div className="ContentBlock">
-                                <label className="ContentBlock-label" htmlFor="service1">Service</label>
-                                <p className="ContentBlock-text" id="service1">April 2015 - May 2017</p>
-                            </div>
+                        <div className="ContentBlock">
+                            <label className="ContentBlock-label" htmlFor="title1">Title</label>
+                            <p className="ContentBlock-text" id="title1"><abbr title="User Interface">UI</abbr>/<abbr title="User Experience">UX</abbr> Developer</p>
+                        </div>
+                        <div className="ContentBlock">
+                            <label className="ContentBlock-label" htmlFor="service1">Service</label>
+                            <p className="ContentBlock-text" id="service1">April 2015 - May 2017</p>
                         </div>
                         <div className="ContentBlock">
                             <label className="ContentBlock-label" htmlFor="about1">About</label>
@@ -35,15 +33,13 @@ facilities.</p>
                     </div>
                     <div className="ContentGroup">
                         <h3 className="ContentGroup-subHeader">Dealer Spike</h3>
-                        <div className="ContentGroup-contentBlockWrapper">
-                            <div className="ContentBlock">
-                                <label className="ContentBlock-label" htmlFor="title2">Title</label>
-                                <p className="ContentBlock-text" id="title2">Lead Front End Developer</p>
-                            </div>
-                            <div className="ContentBlock">
-                                <label className="ContentBlock-label" htmlFor="service2">Service</label>
-                                <p className="ContentBlock-text" id="service2">December 2010 - April 2015</p>
-                            </div>
+                        <div className="ContentBlock">
+                            <label className="ContentBlock-label" htmlFor="title2">Title</label>
+                            <p className="ContentBlock-text" id="title2">Lead Front End Developer</p>
+                        </div>
+                        <div className="ContentBlock">
+                            <label className="ContentBlock-label" htmlFor="service2">Service</label>
+                            <p className="ContentBlock-text" id="service2">December 2010 - April 2015</p>
                         </div>
                         <div className="ContentBlock">
                             <label className="ContentBlock-label" htmlFor="about2">About</label>

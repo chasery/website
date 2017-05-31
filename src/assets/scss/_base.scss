@@ -8,6 +8,8 @@
 // Base Style
 $body-bg: $mine-shaft;
 $body-color: $mine-shaft;
+$body-font: 'Montserrat', sans-serif;
+$body-size: 100%;
 
 body {
     // Layout
@@ -15,7 +17,8 @@ body {
     // Theme
     background: $body-bg;
     color: $body-color;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $body-font;
+	font-size: $body-size;
 
 	abbr {
 		text-decoration: none;
