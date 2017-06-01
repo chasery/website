@@ -39,6 +39,10 @@ module.exports = {
                     // { loader: 'resolve-url-loader' },
                     { loader: 'sass-loader', options: { sourceMap: true } }
                 ]
+            },
+            {
+                test: /\.(svg)$/,
+                loader: 'raw-loader'
             }
         ]
     },
