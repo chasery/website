@@ -43,6 +43,10 @@ module.exports = {
             {
                 test: /\.(svg)$/,
                 loader: 'raw-loader'
+            },
+            {
+                test: /\.(pdf)$/,
+                use: 'file-loader?name=[name].[ext]&outputPath=assets/pdf/'
             }
         ]
     },

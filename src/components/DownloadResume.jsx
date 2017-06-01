@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import pdfFile from '../assets/pdf/ryan-chase-resume.pdf'
 var downloadIcon = require('../assets/svg/download-icon.svg');
 export class DownloadResume extends Component {
     render() {
