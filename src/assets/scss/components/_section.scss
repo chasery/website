@@ -1,3 +1,6 @@
+$SectionWrapper-bg: $porcelain-2;
+$SectionWrapper-padding: $l-space;
+
 $Section-l-width: 66vw;
 $Section-margin-top: $l-space;
 $Section-m-width: 75vw;
@@ -10,6 +13,16 @@ $Section-header-weight: $heading-weight;
 
 $Section--skills-contentGroupWrapper-padding: $xxl-space;
 
+.SectionWrapper {
+    // Layout
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: $SectionWrapper-padding 0;
+    width: 100%;
+    // Theme
+    background-color: $SectionWrapper-bg;
+}
 .Section {
     display: flex;
     flex-direction: column;
@@ -34,6 +47,9 @@ $Section--skills-contentGroupWrapper-padding: $xxl-space;
 }
 
 @media (min-width: $m-break) {
+    .SectionWrapper {
+        padding: calc(#{$SectionWrapper-padding} * 2) 0;
+    }
     .Section {
         padding: 0;
         width: $Section-m-width;
