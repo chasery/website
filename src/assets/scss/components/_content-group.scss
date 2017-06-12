@@ -1,6 +1,6 @@
-$ContentGroup-margin-top: $m-space;
+$ContentGroup-margin-top: $l-space;
 
-$ContentGroup--half-space: $l-space;
+$ContentGroup--half-margin: 1.5rem;
 
 $ContentGroup-subHeader-border: $border-regent-gray;
 $ContentGroup-subHeader-color: $shuttle-gray;
@@ -8,6 +8,9 @@ $ContentGroup-subHeader-margin-bottom: $m-space;
 $ContentGroup-subHeader-padding-bottom: $xs-space;
 $ContentGroup-subHeader-size: $sub-heading;
 $ContentGroup-subHeader-weight: $sub-heading-weight;
+
+$ContentGroup-small-padding-left: 1.5rem;
+$ContentGroup-small-size: 1rem;
 
 $ContentGroup-contentBlockWrapper-margin-bottom: $m-space;
 
@@ -21,6 +24,8 @@ $ContentGroup-contentBlockWrapper-margin-bottom: $m-space;
     }
     &-subHeader {
         // Layout
+        display: flex;
+        align-items: baseline;
         border-bottom: $ContentGroup-subHeader-border;
         font-size: $ContentGroup-subHeader-size;
         margin-bottom: $ContentGroup-subHeader-margin-bottom;
@@ -29,19 +34,35 @@ $ContentGroup-contentBlockWrapper-margin-bottom: $m-space;
         color: $ContentGroup-subHeader-color;
         font-weight: $ContentGroup-subHeader-weight;
     }
+    &-small {
+        flex-grow: 1;
+        padding-left: $ContentGroup-small-padding-left;
+        font-size: $ContentGroup-small-size;
+    }
 }
 
 @media (min-width: $m-break) {
     .ContentGroup {
         & + & {
-            margin-top: calc(#{$ContentGroup-margin-top} * 2);
+            margin-top: $xl-space;
+        }
+        &-column {
+            display: flex;
+            flex-direction: column;
+        }
+        &-row {
+            display: flex;
+            flex-direction: row;
+        }
+        &-subHeader {
+            margin-bottom: calc(#{$ContentGroup-subHeader-margin-bottom} * 1.5);
         }
         &--half {
-            margin: 0 $ContentGroup--half-space 0 0;
-            max-width: calc(50% - #{$ContentGroup--half-space});
+            margin: 0 $ContentGroup--half-margin 0 0;
+            width: calc(50% - #{$ContentGroup--half-margin});
 
             & + & {
-                margin: 0 0 0 $ContentGroup--half-space;
+                margin: 0 0 0 $ContentGroup--half-margin;
             }
         }
     }
