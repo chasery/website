@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 import pdfFile from '../assets/pdf/ryan-chase-resume.pdf'
-var downloadIcon = require('../assets/svg/download-icon.svg');
-export class DownloadResume extends Component {
+const downloadIcon = require('../assets/svg/download-icon.svg');
+
+export default class DownloadResume extends React.Component {
     render() {
         return (
-            <div className="Section">
+            <section className="Section">
                 <div className="Section-wrapper">
                     <form method="get" action="./assets/pdf/ryan-chase-resume.pdf">
                         <button className="Button">
@@ -13,8 +15,7 @@ export class DownloadResume extends Component {
                         </button>
                     </form>
                 </div>
-            </div>
+            </section>
         );
     }
 }
-export default DownloadResume;

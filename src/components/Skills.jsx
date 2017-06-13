@@ -1,85 +1,77 @@
-import React, { Component } from 'react';
-export class Skills extends Component {
+import React from 'react';
+import ContentBlockText from './shared/ContentBlockText.jsx';
+import ContentBlockList from './shared/ContentBlockList.jsx';
+
+export default class Skills extends React.Component {
     render() {
         return (
-            <div className="Section">
+            <section className="Section">
                 <div className="Section-wrapper">
                     <h2 className="Section-header">Skills</h2>
                     <div className="Section-content">
                         <div className="ContentGroup ContentGroup--half">
-                            <h3 className="ContentGroup-subHeader"><abbr title="User Experience">UX</abbr> Visual Designer</h3>
-                            <div className="ContentBlock ContentBlock--inlineList">
-                                <label className="ContentBlock-label" htmlFor="process">Process</label>
-                                <ul className="ContentBlock-list" id="process">
-                                    <li className="ContentBlock-item">User Testing</li>
-                                    <li className="ContentBlock-item">Personas</li>
-                                    <li className="ContentBlock-item">User Flows</li>
-                                    <li className="ContentBlock-item">Storyboards</li>
-                                    <li className="ContentBlock-item">Wireframes</li>
-                                    <li className="ContentBlock-item">Prototypes</li>
-                                    <li className="ContentBlock-item">Style Guides</li>
-                                    <li className="ContentBlock-item">User Acceptance Testing</li>
-                                </ul>
-                            </div>
-                            <div className="ContentBlock ContentBlock--inlineList">
-                                <label className="ContentBlock-label" htmlFor="applications">Applications</label>
-                                <ul className="ContentBlock-list" id="applications">
-                                    <li className="ContentBlock-item">Sketch</li>
-                                    <li className="ContentBlock-item">Keynote</li>
-                                    <li className="ContentBlock-item">InVision</li>
-                                    <li className="ContentBlock-item">Adobe Experience Design</li>
-                                    <li className="ContentBlock-item">After Effects</li>
-                                    <li className="ContentBlock-item">Illustrator</li>
-                                    <li className="ContentBlock-item">Photoshop</li>
-                                </ul>
-                            </div>
+                            <h3 className="ContentGroup-subHeader"><abbr title="User Experience">UX </abbr>Visual Designer</h3>
+                            <ContentBlockList isInline="true" label="Process" labelFor="designerProcess" items={designerProcessItems} />
+                            <ContentBlockList isInline="true" label="Applications" labelFor="designerApplications" items={designerApplicationsItems} />
                         </div>
                         <div className="ContentGroup ContentGroup--half">
                             <h3 className="ContentGroup-subHeader">Front End Developer</h3>
-                            <div className="ContentBlock ContentBlock--inlineList">
-                                <label className="ContentBlock-label" htmlFor="languages">Languages</label>
-                                <ul className="ContentBlock-list" id="languages">
-                                    <li className="ContentBlock-item"><abbr title="Hypertext Markup Language">HTML</abbr></li>
-                                    <li className="ContentBlock-item"><abbr title="Cascading Style Sheets">CSS</abbr></li>
-                                    <li className="ContentBlock-item"><abbr title="Syntactically Awesome Style Sheets">SCSS</abbr></li>
-                                    <li className="ContentBlock-item">JavaScript</li>
-                                    <li className="ContentBlock-item">TypeScript</li>
-                                </ul>
-                            </div>
-                            <div className="ContentBlock ContentBlock--inlineList">
-                                <label className="ContentBlock-label" htmlFor="frameworks">Frameworks</label>
-                                <ul className="ContentBlock-list" id="frameworks">
-                                    <li className="ContentBlock-item">Angular</li>
-                                    <li className="ContentBlock-item">Bootstrap</li>
-                                    <li className="ContentBlock-item">Foundation</li>
-                                    <li className="ContentBlock-item">React</li>
-                                </ul>
-                            </div>
-                            <div className="ContentBlock ContentBlock--inlineList">
-                                <label className="ContentBlock-label" htmlFor="compilers">Task Runners & Compilers</label>
-                                <ul className="ContentBlock-list" id="compilers">
-                                    <li className="ContentBlock-item">WebPack</li>
-                                    <li className="ContentBlock-item">Gulp</li>
-                                    <li className="ContentBlock-item">Babel</li>
-                                </ul>
-                            </div>
-                            <div className="ContentBlock ContentBlock--inlineList">
-                                <label className="ContentBlock-label" htmlFor="other">Other</label>
-                                <ul className="ContentBlock-list" id="other">
-                                    <li className="ContentBlock-item">Agile</li>
-                                    <li className="ContentBlock-item">Certified ScrumMaster</li>
-                                    <li className="ContentBlock-item"><abbr title="Node Packet Manager">NPM</abbr></li>
-                                    <li className="ContentBlock-item">Yarn</li>
-                                    <li className="ContentBlock-item">Git</li>
-                                    <li className="ContentBlock-item">Visual Studios</li>
-                                    <li className="ContentBlock-item">Visual Studios Code</li>
-                                </ul>
-                            </div>
+                            <ContentBlockList isInline="true" label="Languages" labelFor="frontEndLanguages" items={frontEndLanguagesItems} />
+                            <ContentBlockList isInline="true" label="Frameworks" labelFor="frontEndFrameworks" items={frontEndFrameworksItems} />
+                            <ContentBlockList isInline="true" label="Compilers" labelFor="frontEndCompilers" items={frontEndCompilersItems} />
+                            <ContentBlockList isInline="true" label="Other" labelFor="frontEndOther" items={frontEndOtherItems} />
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }
-export default Skills;
+
+const designerProcessItems = [
+    {"isAbbr":false, "title":null, "text":"User Testing"},
+    {"isAbbr":false, "title":null, "text":"Personas"},
+    {"isAbbr":false, "title":null, "text":"User Flows"},
+    {"isAbbr":false, "title":null, "text":"Storyboards"},
+    {"isAbbr":false, "title":null, "text":"Wireframes"},
+    {"isAbbr":false, "title":null, "text":"Prototypes"},
+    {"isAbbr":false, "title":null, "text":"Style Guides"},
+    {"isAbbr":false, "title":null, "text":"User Acceptance Testing"}
+];
+const designerApplicationsItems = [
+    {"isAbbr":false, "title":null, "text":"Sketch"},
+    {"isAbbr":false, "title":null, "text":"Keynote"},
+    {"isAbbr":false, "title":null, "text":"InVision"},
+    {"isAbbr":false, "title":null, "text":"Adobe Experience Design"},
+    {"isAbbr":false, "title":null, "text":"After Effects"},
+    {"isAbbr":false, "title":null, "text":"Illustrator"},
+    {"isAbbr":false, "title":null, "text":"Photoshop"}
+];
+
+const frontEndLanguagesItems = [
+    {"isAbbr":true, "title":"Hypertext Markup Language 5", "text":"HTML5"},
+    {"isAbbr":true, "title":"Cascading Style Sheets", "text":"CSS3"},
+    {"isAbbr":true, "title":"Syntactically Awesome Style Sheets", "text":"SCSS"},
+    {"isAbbr":false, "title":null, "text":"JavaScript"},
+    {"isAbbr":false, "title":null, "text":"TypeScript"}
+];
+const frontEndFrameworksItems = [
+    {"isAbbr":false, "title":null, "text":"Angular"},
+    {"isAbbr":false, "title":null, "text":"React"},
+    {"isAbbr":false, "title":null, "text":"Bootstrap"},
+    {"isAbbr":false, "title":null, "text":"Foundation"}
+];
+const frontEndCompilersItems = [
+    {"isAbbr":false, "title":null, "text":"Webpack"},
+    {"isAbbr":false, "title":null, "text":"Gulp"},
+    {"isAbbr":false, "title":null, "text":"Babel"}
+];
+const frontEndOtherItems = [
+    {"isAbbr":false, "title":null, "text":"Agile"},
+    {"isAbbr":false, "title":null, "text":"Certified ScrumMaster"},
+    {"isAbbr":true, "title":"Node Packet Manager", "text":"NPM"},
+    {"isAbbr":false, "title":null, "text":"Yarn"},
+    {"isAbbr":false, "title":null, "text":"Git"},
+    {"isAbbr":false, "title":null, "text":"Visual Studios"},
+    {"isAbbr":false, "title":null, "text":"Visual Studios Code"}
+];

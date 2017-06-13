@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-var linkedInIcon = require('../assets/svg/linked-in-icon.svg');
-var emailIcon = require('../assets/svg/email-icon.svg');
-var phoneIcon = require('../assets/svg/phone-icon.svg');
-export class Footer extends Component {
+import React from 'react';
+
+const linkedInIcon = require('../assets/svg/linked-in-icon.svg');
+const emailIcon = require('../assets/svg/email-icon.svg');
+const phoneIcon = require('../assets/svg/phone-icon.svg');
+
+export default class Footer extends React.Component {
     render() {
         return (
-            <div className="Footer">
+            <footer className="Footer">
                 <ul className="Footer-list">
                     <li className="Footer-item">
                         <a className="Anchor" href="https://www.linkedin.com/in/ryan-chase-75b79813">
@@ -26,8 +28,7 @@ export class Footer extends Component {
                         </a>
                     </li>
                 </ul>
-            </div>
+            </footer>
         );
     }
 }
-export default Footer;

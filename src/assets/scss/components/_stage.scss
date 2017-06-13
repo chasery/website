@@ -1,0 +1,13 @@
+$Stage-margin-bottom: 7rem;
+
+.Stage {
+	display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: $m-break) {
+    .Stage {
+		align-items: center;
+		padding-bottom: $Stage-margin-bottom;
+    }
+}

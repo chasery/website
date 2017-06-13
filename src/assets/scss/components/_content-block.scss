@@ -43,7 +43,7 @@ $ContentBlock-text-weight: $content-weight;
         color: $ContentBlock-label-color;
         font-weight: $ContentBlock-label-weight;
     }
-    &--labelImportant {
+    &--emphasizeLabel {
         #{$ContentBlock}-label {
             font-weight: $ContentBlock--labelImportant-label-weight;
         }
@@ -97,6 +97,7 @@ $ContentBlock-text-weight: $content-weight;
     }
     // Content block thumbnail
     &--thumbnail {
+        flex-grow: 0;
         margin: 0 0 $ContentBlock--thumbnail-margin-bottom 0;
     }
 }
