@@ -1,6 +1,6 @@
-import React from 'react';
-import ContentBlockText from './shared/ContentBlockText.jsx';
-import ContentBlockList from './shared/ContentBlockList.jsx';
+import React from 'react'
+import ContentBlockText from '../shared/ContentBlockText.jsx'
+import ContentBlockList from '../shared/ContentBlockList.jsx'
 
 export default class Experience extends React.Component {
     render() {
@@ -32,7 +32,7 @@ provider." />
                     </div>
                 </div>
             </section>
-        );
+        )
     }
 }
 
@@ -42,10 +42,10 @@ const sureIdAccomplishmentsItems = [
     {"isAbbr":false, "title":null, "text":"Established a pattern library and style guide."},
     {"isAbbr":false, "title":null, "text":"Created user testing standards for the legacy product."},
     {"isAbbr":false, "title":null, "text":"Made design and front end contributions on multiple projects."}
-];
+]
 
 const dsAccomplishmentsItems = [
     {"isAbbr":false, "title":null, "text":"Collaborated with backend developers to create a responsive framework."},
     {"isAbbr":false, "title":null, "text":"Created front end standards for the company."},
     {"isAbbr":false, "title":null, "text":"Trained and lead a team of eleven front end developers."}
-];
+]

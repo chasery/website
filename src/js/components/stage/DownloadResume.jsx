@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import pdfFile from '../../assets/pdf/ryan-chase-resume.pdf'
-const downloadIcon = require('../../assets/svg/download-icon.svg');
+import pdfFile from '../../../assets/pdf/ryan-chase-resume.pdf'
+const downloadIcon = require('../../../assets/svg/download-icon.svg')
 
 export default class DownloadResume extends React.Component {
     render() {
@@ -16,6 +16,6 @@ export default class DownloadResume extends React.Component {
                     </form>
                 </div>
             </section>
-        );
+        )
     }
 }

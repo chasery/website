@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default class ContentBlockList extends React.Component {
     render() {
@@ -13,8 +13,8 @@ export default class ContentBlockList extends React.Component {
                         {item.text}
                     </li>
                 )
-            );
-        });
+            )
+        })
         return (
             <div className={"ContentBlock" + (this.props.isHalfWidth?" ContentBlock--half":"") + (this.props.isInline?" ContentBlock--inlineList":"") + (this.props.emphasizeLabel?" ContentBlock--emphasizeLabel":"")}>
                 <label className="ContentBlock-label" htmlFor={this.props.labelFor}>{this.props.label}</label>
@@ -22,7 +22,7 @@ export default class ContentBlockList extends React.Component {
                     {listItems}
                 </ul>
             </div>
-        );
+        )
     }
 }
 // <ContentBlockList isHalfWidth="" isInline="" emphasizeLabel="" label="" labelFor="" items={} />

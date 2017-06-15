@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import ContentGroup from './shared/ContentGroup.jsx';
+import ContentGroup from '../shared/ContentGroup.jsx'
 
 export default class Skills extends React.Component {
     render() {
@@ -18,7 +18,7 @@ export default class Skills extends React.Component {
                     </div>
                 </div>
             </section>
-        );
+        )
     }
 }
 
@@ -100,4 +100,4 @@ const skillsContent = [
             }
         ]
     }
-];
+]

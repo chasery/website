@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default class ContentBlockText extends React.Component {
     render() {
@@ -7,7 +7,7 @@ export default class ContentBlockText extends React.Component {
                 <label className="ContentBlock-label" htmlFor={this.props.labelFor}>{this.props.label}</label>
                 <p className="ContentBlock-text" id={this.props.labelFor}>{this.props.text}</p>
             </div>
-        );
+        )
     }
 }
 // <ContentBlockText isHalfWidth="" emphasizeLabel="" label="" labelFor="" text="" />

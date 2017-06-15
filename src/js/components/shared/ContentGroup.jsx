@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import ContentBlockList from './ContentBlockList.jsx';
+import ContentBlockList from './ContentBlockList.jsx'
 
 export default class ContentGroup extends React.Component {
     render() {

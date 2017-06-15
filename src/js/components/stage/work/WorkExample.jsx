@@ -1,11 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import ContentBlockText from '../shared/ContentBlockText.jsx';
-import ContentBlockList from '../shared/ContentBlockList.jsx';
-import ContentBlockThumbnail from '../shared/ContentBlockThumbnail.jsx';
+import ContentBlockText from '../../shared/ContentBlockText.jsx'
+import ContentBlockList from '../../shared/ContentBlockList.jsx'
+import ContentBlockThumbnail from '../../shared/ContentBlockThumbnail.jsx'
 
-const arrow = require('../../../assets/svg/arrow-icon.svg');
+const arrow = require('../../../../assets/svg/arrow-icon.svg')
 
 export default class WorkExample extends React.Component {
     render() {
@@ -20,7 +20,7 @@ export default class WorkExample extends React.Component {
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 // <WorkExample name="Data Review" year="2017" route="data-review" thumbnail="http://via.placeholder.com/288x161" aboutText="" contributionsList=[] />
