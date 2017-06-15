@@ -1,6 +1,6 @@
 import React from 'react';
 
-const logo = require('../assets/svg/chasery-logo.svg');
+const logo = require('../../assets/svg/chasery-logo.svg');
 
 export default class Header extends React.Component {
     render() {

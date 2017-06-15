@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src','client.jsx'),
+    entry: path.resolve(__dirname, 'src/js','client.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
@@ -41,17 +41,13 @@ module.exports = {
                 ]
             },
             {
+                test: /\.jpe?g$|\.gif$|\.png$|\.pdf$/,
+                loader: require.resolve("file-loader") + "?name=../[path][name].[ext]"
+            },
+            {
                 test: /\.(svg)$/,
                 loader: 'raw-loader'
             },
-            {
-                test: /\.(pdf)$/,
-                use: 'file-loader?name=[name].[ext]&outputPath=assets/pdf/'
-            },
-            {
-                test: /\.(png)$/,
-                use: 'file-loader?name=[name].[ext]&outputPath=./'
-            }
         ]
     },
     plugins: [

@@ -1,14 +1,11 @@
 import React from 'react';
 
-import Header from './Header.jsx';
-import Work from './Work.jsx';
-import Skills from './Skills.jsx';
-import Experience from './Experience.jsx';
-import DownloadResume from './DownloadResume.jsx';
-import Footer from './Footer.jsx';
-
-import favicon from '../favicon.png'
-import '../assets/scss/app.scss';
+import Header from '../components/Header.jsx';
+import Work from '../components/Work.jsx';
+import Skills from '../components/Skills.jsx';
+import Experience from '../components/Experience.jsx';
+import DownloadResume from '../components/DownloadResume.jsx';
+import Footer from '../components/Footer.jsx';
 
 export default class Stage extends React.Component {
     render() {

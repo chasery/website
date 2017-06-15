@@ -1,8 +1,8 @@
 import React from 'react';
 
-const linkedInIcon = require('../assets/svg/linked-in-icon.svg');
-const emailIcon = require('../assets/svg/email-icon.svg');
-const phoneIcon = require('../assets/svg/phone-icon.svg');
+const linkedInIcon = require('../../assets/svg/linked-in-icon.svg');
+const emailIcon = require('../../assets/svg/email-icon.svg');
+const phoneIcon = require('../../assets/svg/phone-icon.svg');
 
 export default class Footer extends React.Component {
     render() {
