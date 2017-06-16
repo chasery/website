@@ -2,7 +2,7 @@ import React from 'react'
 
 export default class ContentBlockList extends React.Component {
     render() {
-        var listItems = this.props.items.map(function(item) {
+        var listItems = this.props.content.map(function(item) {
             return (
                 item.isAbbr ? (
                     <li className="ContentBlock-item" key={item.text}>
@@ -25,4 +25,4 @@ export default class ContentBlockList extends React.Component {
         )
     }
 }
-// <ContentBlockList isHalfWidth="" isInline="" emphasizeLabel="" label="" labelFor="" items={} />
+// <ContentBlockList isHalfWidth="" isInline="" emphasizeLabel="" label="" labelFor="" content={} />

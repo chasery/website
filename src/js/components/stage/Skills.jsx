@@ -1,12 +1,22 @@
 import React from 'react'
 
-import ContentGroup from '../shared/ContentGroup.jsx'
+import ContentBlockText from '../shared/ContentBlockText.jsx'
+import ContentBlockList from '../shared/ContentBlockList.jsx'
 
 export default class Skills extends React.Component {
     render() {
-        var sectionContent = skillsContent.map(function(item) {
+        var sectionContent = skillsContent.map((item) => {
             return (
-                <ContentGroup key={item.groupHeading} groupHeading={item.groupHeading} isHalfWidth={item.isHalfWidth} content={item.content} />
+                <div className="ContentGroup ContentBlock--half" key={item.skillsHeading}>
+                    <h3 className="ContentGroup-subHeader">{item.skillsHeading}</h3>
+                    {item.skills ? item.skills.map ((skill) => {
+                        return (
+                            <ContentBlockList key={skill.label} isInline={skill.isInline} label={skill.label} labelFor={`${skill.label}List`} content={skill.content} />
+                        )
+                    })
+                    : <div>{item.skillsHeading} has no skills asscoiated with it currently.</div>
+                    }
+                </div>
             )
         })
         return (
@@ -24,13 +34,12 @@ export default class Skills extends React.Component {
 
 const skillsContent = [
     {
-        "groupHeading":"User Experience Visual Designer",
-        "isHalfWidth":true,
-        "content":[
+        "skillsHeading":"User Experience Visual Designer",
+        "skills":[
             {
                 "label":"Process",
                 "isInline":true,
-                "items":[
+                "content":[
                     {"isAbbr":false, "title":null, "text":"User Testing"},
                     {"isAbbr":false, "title":null, "text":"Personas"},
                     {"isAbbr":false, "title":null, "text":"User Flows"},
@@ -43,7 +52,7 @@ const skillsContent = [
             },{
                 "label":"Applications",
                 "isInline":true,
-                "items":[
+                "content":[
                     {"isAbbr":false, "title":null, "text":"Sketch"},
                     {"isAbbr":false, "title":null, "text":"Keynote"},
                     {"isAbbr":false, "title":null, "text":"InVision"},
@@ -55,13 +64,12 @@ const skillsContent = [
             }
         ]
     },{
-        "groupHeading":"Front End Developer",
-        "isHalfWidth":true,
-        "content":[
+        "skillsHeading":"Front End Developer",
+        "skills":[
             {
                 "label":"Languages",
                 "isInline":true,
-                "items":[
+                "content":[
                     {"isAbbr":true, "title":"Hypertext Markup Language 5", "text":"HTML5"},
                     {"isAbbr":true, "title":"Cascading Style Sheets", "text":"CSS3"},
                     {"isAbbr":true, "title":"Syntactically Awesome Style Sheets", "text":"SCSS"},
@@ -71,7 +79,7 @@ const skillsContent = [
             },{
                 "label":"Frameworks",
                 "isInline":true,
-                "items":[
+                "content":[
                     {"isAbbr":false, "title":null, "text":"Angular"},
                     {"isAbbr":false, "title":null, "text":"React"},
                     {"isAbbr":false, "title":null, "text":"Bootstrap"},
@@ -80,7 +88,7 @@ const skillsContent = [
             },{
                 "label":"Compilers & Transpilers",
                 "isInline":true,
-                "items":[
+                "content":[
                     {"isAbbr":false, "title":null, "text":"Webpack"},
                     {"isAbbr":false, "title":null, "text":"Gulp"},
                     {"isAbbr":false, "title":null, "text":"Babel"}
@@ -88,7 +96,7 @@ const skillsContent = [
             },{
                 "label":"Other",
                 "isInline":true,
-                "items":[
+                "content":[
                     {"isAbbr":false, "title":null, "text":"Agile"},
                     {"isAbbr":false, "title":null, "text":"Certified ScrumMaster"},
                     {"isAbbr":true, "title":"Node Packet Manager", "text":"NPM"},
