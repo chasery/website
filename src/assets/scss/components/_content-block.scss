@@ -97,7 +97,9 @@ $ContentBlock-text-weight: $content-weight;
     }
     // Content block thumbnail
     &--thumbnail {
+        flex-direction: row;
         flex-grow: 0;
+        justify-content: center;
         margin: 0 0 $ContentBlock--thumbnail-margin-bottom 0;
     }
 }

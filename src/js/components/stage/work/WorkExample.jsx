@@ -11,7 +11,7 @@ export default class WorkExample extends React.Component {
     render() {
         return (
             <div className="ContentGroup">
-                <h3 className="ContentGroup-subHeader">{this.props.exampleName}<small className="ContentGroup-small">{this.props.year}</small><Link className="Button Button--smallTransparent" to={`/${this.props.route}`}><span className="Button-icon" dangerouslySetInnerHTML={{__html: arrow}} /></Link></h3>
+                <h3 className="ContentGroup-subHeader">{this.props.exampleName}<small className="ContentGroup-small">{this.props.year}</small><Link className="Anchor Anchor--smallTransparent" to={`/${this.props.route}`}><span className="Anchor-text">View</span><span className="Anchor-icon" dangerouslySetInnerHTML={{__html: arrow}} /></Link></h3>
                 <div className="ContentGroup-row">
                     <ContentBlockThumbnail path={this.props.thumbnailUrl} width="288" height="161" />
                     <div className="ContentGroup-column">

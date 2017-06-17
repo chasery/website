@@ -1,39 +1,44 @@
 $Anchor: ".Anchor";
 $Anchor-bg: transparent;
-$Anchor-bg-hover: $white;
+$Anchor-bg-hover: $san-marino;
+$Anchor-border-raidus: $border-radius;
 $Anchor-cubic-bezier: $cubic-bezier;
-$Anchor-min-height: 4rem;
-$Anchor-padding: 0 $l-space;
+$Anchor-padding: $s-space $m-space;
 $Anchor-transition-in: $transition-in;
 $Anchor-transition-out: $transition-out;
 
-$Anchor-icon-margin-right: $m-space;
-$Anchor-icon-fill: $white;
-$Anchor-icon-fill-hover: $san-marino;
-$Anchor-icon-stroke: $white;
-$Anchor-icon-stroke-hover: $san-marino;
+$Anchor-icon-fill: $san-marino;
+$Anchor-icon-fill-hover: $white;
+$Anchor-icon-stroke: $san-marino;
+$Anchor-icon-stroke-hover: $white;
 
-$Anchor-text-color: $white;
-$Anchor-text-color-hover: $san-marino;
+$Anchor-text-color: $san-marino;
+$Anchor-text-color-hover: $white;
+$Anchor-text-margin-right: $m-space;
 $Anchor-text-size: $sub-heading;
-$Anchor-text-weight: 400;
+$Anchor-text-weight: 300;
 
 .Anchor {
     // Layout
     align-items: center;
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
     justify-content: center;
-    min-height: $Anchor-min-height;
+    padding: $Anchor-padding;
     // Theme
     background-color: $Anchor-bg;
+    border-radius: $Anchor-border-raidus;
     text-decoration: none;
     transition: background $Anchor-transition-out $Anchor-cubic-bezier;
 
     &-icon {
-        margin-right: $Anchor-icon-margin-right;
+        // Layout
+        position: relative;
+        // Theme
+        transition: all $Anchor-transition-out $Anchor-cubic-bezier;
 
-        path {
+        path, polyline {
             stroke: $Anchor-icon-stroke;
             transition: stroke $Anchor-transition-out $Anchor-cubic-bezier;
         }
@@ -41,6 +46,7 @@ $Anchor-text-weight: 400;
     &-text {
         // Layout
         font-size: $Anchor-text-size;
+        margin-right: $Anchor-text-margin-right;
         // Theme
         color: $Anchor-text-color;
         font-weight: $Anchor-text-weight;
@@ -50,7 +56,11 @@ $Anchor-text-weight: 400;
         background-color: $Anchor-bg-hover;
         transition: background $Anchor-transition-in $Anchor-cubic-bezier;
 
-        #{$Anchor}-icon path {
+        #{$Anchor}-icon {
+            left: $xs-space;
+            transition: all $Anchor-transition-in $Anchor-cubic-bezier;
+        }
+        #{$Anchor}-icon path, #{$Anchor}-icon polyline {
             stroke: $Anchor-icon-stroke-hover;
             transition: stroke $Anchor-transition-in $Anchor-cubic-bezier;
         }
@@ -72,11 +82,5 @@ $Anchor-text-weight: 400;
                 transition: fill $Anchor-transition-in $Anchor-cubic-bezier;
             }
         }
-    }
-}
-
-@media (min-width: $m-break) {
-    .Anchor {
-        padding: $Anchor-padding;
     }
 }

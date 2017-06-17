@@ -9,8 +9,6 @@ $Button-padding: $m-space $l-space;
 $Button-transition-in: $transition-in;
 $Button-transition-out: $transition-out;
 
-$Button--smallIcon-padding: $s-space $m-space;
-
 $Button-icon-margin-right: $m-space;
 $Button-icon-padding-top: $xs-space;
 $Button-icon-stroke: $san-marino;
@@ -60,19 +58,6 @@ $Button-text-weight: 300;
         #{$Button}-text {
             color: $Button-text-color-hover;
             transition: color $Button-transition-in $Button-cubic-bezier;
-        }
-    }
-    &--smallTransparent {
-        border: none;
-        padding: $Button--smallIcon-padding;
-
-        #{$Button}-icon {
-            margin-right: 0;
-            padding-top: 0;
-
-        }
-        &:hover, &:focus {
-            border: none;
         }
     }
 }

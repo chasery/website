@@ -6,25 +6,15 @@ import favicon from '../favicon.png'
 import '../assets/scss/app.scss'
 
 import Stage from './components/Stage.jsx'
-import WorkDetails from './components/WorkDetails.jsx'
+import Details from './components/Details.jsx'
 
 ReactDOM.render((
     <Router>
         <Switch>
-            <Route exact path="/" component={Stage}></Route>
+            <Route exact path="/" component={Stage} />
             <Route path="/:route" render={({ match }) => (
-                <WorkDetails example={examples.find(e => e.route === match.params.route)} />
+                <Details detailsHeader={match.params.route} />
             )} />
         </Switch>
     </Router>
 ), document.getElementById('app'))
-
-const examples = [
-    {
-        "name":"Data Review",
-        "route":"data-review"
-    },{
-        "name":"Waivers Portals",
-        "route":"waivers-portals"
-    }
-]
