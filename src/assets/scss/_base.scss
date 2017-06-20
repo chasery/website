@@ -8,8 +8,10 @@
 // Base Style
 $body-bg: $san-marino;
 $body-color: $shark;
-$body-font: 'Montserrat', sans-serif;
+$body-font: $font;
 $body-size: 100%;
+
+$app-bg: $porcelain-1;
 
 body {
     // Layout
@@ -20,6 +22,15 @@ body {
     font-family: $body-font;
 	font-size: $body-size;
 	text-size-adjust: 100%;
+
+	#app {
+		// Layout
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		// Theme
+		background-color: $app-bg;
+	}
 
 	abbr {
 		text-decoration: none;

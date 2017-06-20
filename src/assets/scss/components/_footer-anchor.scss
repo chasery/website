@@ -1,0 +1,82 @@
+$FooterAnchor: ".FooterAnchor";
+$FooterAnchor-bg: transparent;
+$FooterAnchor-bg-hover: $white;
+$FooterAnchor-cubic-bezier: $cubic-bezier;
+$FooterAnchor-min-height: 4rem;
+$FooterAnchor-padding: 0 $l-space;
+$FooterAnchor-transition-in: $transition-in;
+$FooterAnchor-transition-out: $transition-out;
+
+$FooterAnchor-icon-margin-right: $m-space;
+$FooterAnchor-icon-fill: $white;
+$FooterAnchor-icon-fill-hover: $san-marino;
+$FooterAnchor-icon-stroke: $white;
+$FooterAnchor-icon-stroke-hover: $san-marino;
+
+$FooterAnchor-text-color: $white;
+$FooterAnchor-text-color-hover: $san-marino;
+$FooterAnchor-text-size: $sub-heading;
+$FooterAnchor-text-weight: 400;
+
+.FooterAnchor {
+    // Layout
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    min-height: $FooterAnchor-min-height;
+    // Theme
+    background-color: $FooterAnchor-bg;
+    text-decoration: none;
+    transition: background $FooterAnchor-transition-out $FooterAnchor-cubic-bezier;
+
+    &-icon {
+        margin-right: $FooterAnchor-icon-margin-right;
+
+        path {
+            stroke: $FooterAnchor-icon-stroke;
+            transition: stroke $FooterAnchor-transition-out $FooterAnchor-cubic-bezier;
+        }
+    }
+    &-text {
+        // Layout
+        font-size: $FooterAnchor-text-size;
+        // Theme
+        color: $FooterAnchor-text-color;
+        font-weight: $FooterAnchor-text-weight;
+        transition: color $FooterAnchor-transition-out $FooterAnchor-cubic-bezier;
+    }
+    &:hover, &:focus {
+        background-color: $FooterAnchor-bg-hover;
+        transition: background $FooterAnchor-transition-in $FooterAnchor-cubic-bezier;
+
+        #{$FooterAnchor}-icon path {
+            stroke: $FooterAnchor-icon-stroke-hover;
+            transition: stroke $FooterAnchor-transition-in $FooterAnchor-cubic-bezier;
+        }
+        #{$FooterAnchor}-text {
+            color: $FooterAnchor-text-color-hover;
+            transition: color $FooterAnchor-transition-in $FooterAnchor-cubic-bezier;
+        }
+    }
+    &--fillIcon {
+        #{$FooterAnchor}-icon path {
+            fill: $FooterAnchor-icon-fill;
+            //stroke: none;
+            transition: fill $FooterAnchor-transition-out $FooterAnchor-cubic-bezier;
+        }
+        &:hover, &:focus {
+            #{$FooterAnchor}-icon path {
+                fill: $FooterAnchor-icon-fill-hover;
+                //stroke: none;
+                transition: fill $FooterAnchor-transition-in $FooterAnchor-cubic-bezier;
+            }
+        }
+    }
+}
+
+@media (min-width: $m-break) {
+    .FooterAnchor {
+        padding: $FooterAnchor-padding;
+    }
+}

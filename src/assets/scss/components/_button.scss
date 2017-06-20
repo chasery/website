@@ -1,10 +1,11 @@
+$Button: ".Button";
 $Button-bg: transparent;
 $Button-bg-hover: $san-marino;
 $Button-border: $border-san-marino;
 $Button-border-hover: $border-san-marino;
 $Button-border-raidus: $border-radius;
 $Button-cubic-bezier: $cubic-bezier;
-$Button-padding: $m-space 2rem;
+$Button-padding: $m-space $l-space;
 $Button-transition-in: $transition-in;
 $Button-transition-out: $transition-out;
 
@@ -34,7 +35,7 @@ $Button-text-weight: 300;
         margin-right: $Button-icon-margin-right;
         padding-top: $Button-icon-padding-top;
 
-        path {
+        path, polyline {
             stroke: $Button-icon-stroke;
             transition: stroke $Button-transition-out $Button-cubic-bezier;
         }
@@ -50,22 +51,13 @@ $Button-text-weight: 300;
         border: $Button-border-hover;
         transition: all $Button-transition-in $Button-cubic-bezier;
 
-        .Button-icon path {
+        #{$Button}-icon path, #{$Button}-icon polyline {
             stroke: $Button-icon-stroke-hover;
             transition: stroke $Button-transition-in $Button-cubic-bezier;
         }
-        .Button-text {
+        #{$Button}-text {
             color: $Button-text-color-hover;
             transition: color $Button-transition-in $Button-cubic-bezier;
         }
-    }
-}
-
-@keyframes buttonHover {
-    from {
-        border: $Button-border;
-    }
-    to {
-        border: $Button-border-hover;
     }
 }

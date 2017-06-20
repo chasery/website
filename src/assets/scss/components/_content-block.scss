@@ -1,5 +1,21 @@
 $ContentBlock: ".ContentBlock";
 
+$ContentBlock--half-basis: 50%;
+$ContentBlock--half-margin: $l-space;
+$ContentBlock--half-padding-bottom: $m-space;
+
+$ContentBlock--image-border: $border-iron;
+$ContentBlock--image-text-padding: $m-space;
+$ContentBlock--image-text-weight: 300;
+
+$ContentBlock--labelImportant-label-weight: 400;
+$ContentBlock--labelImportant-item-weight: 300;
+$ContentBlock--labelImportant-text-weight: 300;
+
+$ContentBlock--thumbnail-border: $border-iron;
+$ContentBlock--thumbnail-margin-bottom: $m-space;
+$ContentBlock--thumbnail-margin-right: $xl-space;
+
 $ContentBlock-label-margin-top: $m-space;
 $ContentBlock-label-color: $shark;
 $ContentBlock-label-margin-bottom: $xs-space;
@@ -31,6 +47,17 @@ $ContentBlock-text-weight: $content-weight;
         // Theme
         color: $ContentBlock-label-color;
         font-weight: $ContentBlock-label-weight;
+    }
+    &--emphasizeLabel {
+        #{$ContentBlock}-label {
+            font-weight: $ContentBlock--labelImportant-label-weight;
+        }
+        #{$ContentBlock}-item {
+            font-weight: $ContentBlock--labelImportant-item-weight;
+        }
+        #{$ContentBlock}-text {
+            font-weight: $ContentBlock--labelImportant-text-weight;
+        }
     }
     // Content block with a list
     &-list {
@@ -72,5 +99,47 @@ $ContentBlock-text-weight: $content-weight;
         // Theme
         color: $ContentBlock-text-color;
         font-weight: $ContentBlock-text-weight;
+    }
+    // Content block with an image
+    &--image {
+        #{$ContentBlock}-image {
+            border: $ContentBlock--image-border;
+        }
+        #{$ContentBlock}-text {
+            // Layout
+            padding: $ContentBlock--image-text-padding 0 ;
+            // Theme
+            font-weight: $ContentBlock--image-text-weight;
+        }
+    }
+    &--thumbnail {
+        flex-direction: row;
+        flex-grow: 0;
+        flex-shrink: 0;
+        justify-content: center;
+        margin: 0 0 $ContentBlock--thumbnail-margin-bottom 0;
+        max-width: 18rem;
+
+        #{$ContentBlock}-image {
+            border: $ContentBlock--image-border;
+        }
+    }
+}
+
+@media (min-width: $m-break) {
+    .ContentBlock {
+        &--half {
+            margin: 0 $ContentBlock--half-margin 0 0;
+            padding-bottom: $ContentBlock--half-padding-bottom;
+            width: calc(50% - #{$ContentBlock--half-margin});
+
+            & + & {
+                margin-top: 0;
+                margin: 0 0 0 $ContentBlock--half-margin;
+            }
+        }
+        &--thumbnail {
+            margin: 0 $ContentBlock--thumbnail-margin-right 0 0;
+        }
     }
 }
