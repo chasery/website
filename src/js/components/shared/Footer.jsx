@@ -1,5 +1,6 @@
 import React from 'react'
 
+const githubIcon = require('../../../assets/svg/github-icon.svg')
 const linkedInIcon = require('../../../assets/svg/linked-in-icon.svg')
 const emailIcon = require('../../../assets/svg/email-icon.svg')
 const phoneIcon = require('../../../assets/svg/phone-icon.svg')
@@ -10,7 +11,13 @@ export default class Footer extends React.Component {
             <footer className="Footer">
                 <ul className="Footer-list">
                     <li className="Footer-item">
-                        <a className="FooterAnchor" href="https://www.linkedin.com/in/ryan-chase-75b79813">
+                        <a className="FooterAnchor" href="https://github.com/chasery">
+                            <span className="FooterAnchor-icon" dangerouslySetInnerHTML={{__html: githubIcon}} />
+                            <span className="FooterAnchor-text">Github</span>
+                        </a>
+                    </li>
+                    <li className="Footer-item">
+                        <a className="FooterAnchor" href="https://www.linkedin.com/in/chasery">
                             <span className="FooterAnchor-icon" dangerouslySetInnerHTML={{__html: linkedInIcon}} />
                             <span className="FooterAnchor-text">LinkedIn</span>
                         </a>

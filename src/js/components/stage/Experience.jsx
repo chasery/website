@@ -54,8 +54,8 @@ const experienceContent = [
             "isInline":false,
             "content":[
                 {"isAbbr":false, "title":null, "text":"Advised feature and platform engineering teams on user experience best practices."},
-                {"isAbbr":false, "title":null, "text":"Exposed the legacy product’s first web portal."},
-                {"isAbbr":false, "title":null, "text":"Established a pattern library and style guide."},
+                {"isAbbr":false, "title":null, "text":"Exposed the legacy product’s first web portal which cut hundreds of hours of manual labor a month."},
+                {"isAbbr":false, "title":null, "text":"Established a pattern library and style guide making product decisions more clear and uniform."},
                 {"isAbbr":false, "title":null, "text":"Created user testing standards for the legacy product."},
                 {"isAbbr":false, "title":null, "text":"Made design and front end contributions on multiple projects."}
             ]

@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 
-import favicon from '../favicon.png'
+const favicon = require('../assets/images/favicon.png')
 import '../assets/scss/app.scss'
 
 import Stage from './components/Stage'

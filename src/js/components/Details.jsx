@@ -15,7 +15,7 @@ export default class Details extends React.Component {
                         "content":[
                             {
                                 "image":"initial.png",
-                                "text":"One of two workflows allowing for the processing of an individual registration."
+                                "text":"A workflow allowing for the processing of an individual registration."
                             },{
                                 "image":"loading.png"
                             },{
@@ -37,7 +37,7 @@ export default class Details extends React.Component {
                         "content":[
                             {
                                 "image":"employee-search-initial.png",
-                                "text":"An advanced search that internal users could use to quickly locate a participant in their workflow."
+                                "text":"An advanced search that internal users can use to quickly locate a participant in their workflow."
                             },{
                                 "image":"employee-search-view.png",
                                 "text":"The new workflow conveniently exposes all of the participant's active and inactive records in a single location."
@@ -66,21 +66,21 @@ export default class Details extends React.Component {
                         "content":[
                             {
                                 "image":"reporting-initial.png",
-                                "text":"A first pass for exposure of reports to internal and external users."
+                                "text":"A first pass of reporting for both internal and external users."
                             },{
                                 "image":"reporting-results.png",
-                                "text":"Previously, internal users procured and emailed a document tailored individually to hundreds of customers."
+                                "text":"Previously, internal users procured and emailed a document individually tailored to hundreds of customers."
                             }
                         ]
                     }
                 ]
             }
         ]
-        const result = detailsContent.find(d => d.id === this.props.route);
+        const details = detailsContent.find(d => d.id === this.props.route);
 
         return (
             <main className="Details">
-                <DetailsBody name={result.name} id={result.id} groups={result.groups} />
+                <DetailsBody name={details.name} id={details.id} groups={details.groups} />
                 <Footer />
             </main>
         )
