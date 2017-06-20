@@ -1,13 +1,15 @@
 import React from 'react'
 
-import DetailsHeader from './details/Header.jsx'
-import Footer from './shared/Footer.jsx'
+import DetailsBody from './details/Body'
+import Footer from './shared/Footer'
 
 export default class Details extends React.Component {
     render() {
+        const routeDetails = this.props.routeDetails
+
         return (
             <main className="Details">
-                <DetailsHeader test={this.props.detailsHeader} />
+                <DetailsBody name={routeDetails.name} id={routeDetails.id} groups={routeDetails.groups} />
                 <Footer />
             </main>
         )

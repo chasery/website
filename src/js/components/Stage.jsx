@@ -1,11 +1,11 @@
 import React from 'react'
 
-import StageHeader from './stage/Header.jsx'
-import Work from './stage/Work.jsx'
-import Skills from './stage/Skills.jsx'
-import Experience from './stage/Experience.jsx'
-import DownloadResume from './stage/DownloadResume.jsx'
-import Footer from './shared/Footer.jsx'
+import StageHeader from './stage/Header'
+import Work from './stage/Work'
+import Skills from './stage/Skills'
+import Experience from './stage/Experience'
+import DownloadResume from './stage/DownloadResume'
+import Footer from './shared/Footer'
 
 export default class Stage extends React.Component {
     render() {

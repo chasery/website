@@ -1,0 +1,20 @@
+$Details-bg: $porcelain-2;
+$Details-padding-top: $l-space;
+$Details-padding-bottom: 7rem;
+
+.Details {
+	// Layout
+	display: flex;
+    flex-direction: column;
+	padding-top: $Details-padding-top;
+	// Theme
+	background-color: $Details-bg;
+}
+
+@media (min-width: $m-break) {
+    .Details {
+		align-items: center;
+		padding-top: calc(#{$Details-padding-top} * 2);
+		padding-bottom: $Details-padding-bottom;
+    }
+}

@@ -1,12 +1,12 @@
 import React from 'react'
 
-import WorkExample from './work/WorkExample.jsx'
+import WorkExample from './work/WorkExample'
 
 export default class Work extends React.Component {
     render() {
         var sectionContent = workContent.map((item) => {
             return (
-                <WorkExample key={item.route} exampleName={item.exampleName} year={item.year} route={item.route} thumbnailUrl={item.thumbnailUrl} about={item.about} contributions={item.contributions.content} />
+                <WorkExample key={item.route} exampleName={item.exampleName} year={item.year} route={item.route} exampleImage={item.exampleImage} about={item.about} contributions={item.contributions.content} />
             )
         })
         return (
@@ -24,10 +24,10 @@ export default class Work extends React.Component {
 
 const workContent = [
     {
-        "exampleName":"Data Review",
+        "exampleName":"Registration Processing App",
         "year":"2017",
-        "route":"data-review",
-        "thumbnailUrl":"http://via.placeholder.com/288x161",
+        "route":"registration-processing",
+        "exampleImage":"editing.png",
         "about":"An internal application for users to rapidly review and process registrations. User acceptance testing revealed an increase of 200% in record processing speed from the legacy tool.",
         "contributions":{
             "isInline":true,
@@ -44,10 +44,10 @@ const workContent = [
             ]
         }
     },{
-        "exampleName":"Waivers Portals",
+        "exampleName":"Decisions Web Portals",
         "year":"2017",
-        "route":"waivers-portals",
-        "thumbnailUrl":"http://via.placeholder.com/288x161",
+        "route":"decisions-portals",
+        "exampleImage":"employee-search-view.png",
         "about":"A pair of internal and external portals improving upon an internal employee managed excel document and customer email system.",
         "contributions":{
             "isInline":true,

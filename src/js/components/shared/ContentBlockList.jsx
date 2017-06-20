@@ -17,7 +17,9 @@ export default class ContentBlockList extends React.Component {
         })
         return (
             <div className={"ContentBlock" + (this.props.isHalfWidth?" ContentBlock--half":"") + (this.props.isInline?" ContentBlock--inlineList":"") + (this.props.emphasizeLabel?" ContentBlock--emphasizeLabel":"")}>
-                <label className="ContentBlock-label" htmlFor={this.props.labelFor}>{this.props.label}</label>
+                {this.props.label &&
+                    <label className="ContentBlock-label" htmlFor={this.props.labelFor}>{this.props.label}</label>
+                }
                 <ul className="ContentBlock-list" id={this.props.labelFor}>
                     {listItems}
                 </ul>

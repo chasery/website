@@ -1,3 +1,4 @@
+$ContentGroup: ".ContentGroup";
 $ContentGroup-margin-top: $l-space;
 
 $ContentGroup--half-margin: 1.5rem;
@@ -33,6 +34,10 @@ $ContentGroup-contentBlockWrapper-margin-bottom: $m-space;
         // Theme
         color: $ContentGroup-subHeader-color;
         font-weight: $ContentGroup-subHeader-weight;
+
+        #{$ContentGroup}-subHeaderText {
+            flex-grow: 1;
+        }
     }
     &-small {
         flex-grow: 1;

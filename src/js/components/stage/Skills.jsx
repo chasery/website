@@ -1,7 +1,7 @@
 import React from 'react'
 
-import ContentBlockText from '../shared/ContentBlockText.jsx'
-import ContentBlockList from '../shared/ContentBlockList.jsx'
+import ContentBlockText from '../shared/ContentBlockText'
+import ContentBlockList from '../shared/ContentBlockList'
 
 export default class Skills extends React.Component {
     render() {

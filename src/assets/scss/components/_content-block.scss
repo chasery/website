@@ -4,10 +4,15 @@ $ContentBlock--half-basis: 50%;
 $ContentBlock--half-margin: $l-space;
 $ContentBlock--half-padding-bottom: $m-space;
 
+$ContentBlock--image-border: $border-iron;
+$ContentBlock--image-text-padding: $m-space;
+$ContentBlock--image-text-weight: 300;
+
 $ContentBlock--labelImportant-label-weight: 400;
 $ContentBlock--labelImportant-item-weight: 300;
 $ContentBlock--labelImportant-text-weight: 300;
 
+$ContentBlock--thumbnail-border: $border-iron;
 $ContentBlock--thumbnail-margin-bottom: $m-space;
 $ContentBlock--thumbnail-margin-right: $xl-space;
 
@@ -95,12 +100,29 @@ $ContentBlock-text-weight: $content-weight;
         color: $ContentBlock-text-color;
         font-weight: $ContentBlock-text-weight;
     }
-    // Content block thumbnail
+    // Content block with an image
+    &--image {
+        #{$ContentBlock}-image {
+            border: $ContentBlock--image-border;
+        }
+        #{$ContentBlock}-text {
+            // Layout
+            padding: $ContentBlock--image-text-padding 0 ;
+            // Theme
+            font-weight: $ContentBlock--image-text-weight;
+        }
+    }
     &--thumbnail {
         flex-direction: row;
         flex-grow: 0;
+        flex-shrink: 0;
         justify-content: center;
         margin: 0 0 $ContentBlock--thumbnail-margin-bottom 0;
+        max-width: 18rem;
+
+        #{$ContentBlock}-image {
+            border: $ContentBlock--image-border;
+        }
     }
 }
 

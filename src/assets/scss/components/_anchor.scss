@@ -69,17 +69,20 @@ $Anchor-text-weight: 300;
             transition: color $Anchor-transition-in $Anchor-cubic-bezier;
         }
     }
-    &--fillIcon {
-        #{$Anchor}-icon path {
-            fill: $Anchor-icon-fill;
-            //stroke: none;
-            transition: fill $Anchor-transition-out $Anchor-cubic-bezier;
+    &--reverse {
+        flex-direction: row-reverse;
+
+        #{$Anchor}-icon {
+            transform: rotate(180deg);
         }
+        #{$Anchor}-text {
+            margin: 0 0 0 $Anchor-text-margin-right; // Re-using the default variable
+        }
+
         &:hover, &:focus {
-            #{$Anchor}-icon path {
-                fill: $Anchor-icon-fill-hover;
-                //stroke: none;
-                transition: fill $Anchor-transition-in $Anchor-cubic-bezier;
+            #{$Anchor}-icon {
+                left: auto;
+                right: $xs-space;
             }
         }
     }
