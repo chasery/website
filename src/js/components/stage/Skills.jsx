@@ -34,7 +34,7 @@ export default class Skills extends React.Component {
 
 const skillsContent = [
     {
-        "skillsHeading":"User Experience Visual Designer",
+        "skillsHeading":"UX Visual Designer",
         "skills":[
             {
                 "label":"Process",
