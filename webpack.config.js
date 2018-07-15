@@ -46,11 +46,11 @@ module.exports = {
             },
             {
                 test: /\.pdf$/,
-                loader: 'file-loader?name=[path]/[name].[ext]'
+                loader: 'file-loader?name=[path][name].[ext]'
             },
             {
                 test: /\.jpe?g$|\.gif$|\.png$/,
-                loader: 'url-loader?limit=10000&name=[path]/[name].[ext]'
+                loader: 'url-loader?limit=10000&name=[path][name].[ext]'
             },
             {
                 test: /\.svg$/,
@@ -67,7 +67,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html'
+            template: 'index.html',
+            favicon: 'assets/images/favicon.png'
         }),
         new ExtractTextPlugin({
             filename: 'assets/css/style.css',
